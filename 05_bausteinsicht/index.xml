@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bausteinsicht on SpotiFast Dokumentation (SWE2 2022)</title>
+    <link>https://spotifast.github.io/05_bausteinsicht/</link>
+    <description>Recent content in Bausteinsicht on SpotiFast Dokumentation (SWE2 2022)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    
+	<atom:link href="https://spotifast.github.io/05_bausteinsicht/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ebene 1</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/01_ebene_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/01_ebene_1/</guid>
+      <description>5.1 Ebene 1 DokChess zerfällt wie in Bild unten dargestellt in vier Subsysteme. Die gestrichelten Pfeile stellen fachliche Abhängigkeiten der Subsysteme untereinander dar (&amp;ldquo;x -&amp;gt; y&amp;rdquo; für &amp;ldquo;x ist abhängig von y&amp;rdquo;). Die Kästchen auf der Membran des Systems sind Interaktionspunkte mit Außenstehenden (→ 3.2 Kontextabgrenzung).
+Bild: DokChess, Bausteinsicht, Ebene 1
+   Subsystem Kurzbeschreibung     XBoard-Protokoll Realisiert die Kommunikation mit einem Client mit Hilfe des XBoard-Protokolls.</description>
+    </item>
+    
+    <item>
+      <title>XBoard-Protokoll</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/02_xboard-protokoll/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/02_xboard-protokoll/</guid>
+      <description>5.2 XBoard-Protokoll (Blackbox) Zweck/Verantwortlichkeit Dieses Subsystem realisiert die Kommunikation mit einem Client (z.B. einer grafischen Oberfläche) mit Hilfe des textbasierten XBoard-Protokolls (→ Entscheidung 9.1). Das Subsystem liest Befehle über die Standardeingabe ein, prüft sie gegen die Spielregeln und setzt sie für die Engine um. Antworten der Engine (insbesondere ihre Züge) werden vom Subsystem als Ereignisse entgegengenommen, gemäß Protokoll formatiert und über die Standardausgabe zurückgesendet. Das Subsystem treibt somit das ganze Spielgeschehen.</description>
+    </item>
+    
+    <item>
+      <title>Aufbau Datenbank</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/03_aufbau_datenbank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/03_aufbau_datenbank/</guid>
+      <description>5.3 Aufbau Datenbank Bild: Physisches Schema der Datenbank
+Im Folgenden wird das physische Schema der Datenbank beschrieben. Die Datenbank besteht aus 3 Tabellen, welche in der Abbildung dargestellt sind. Die Tabellen werden im Folgenden beschrieben.
+Tabelle user Die Tabelle user enthält die Daten der Benutzer. Die Daten sind die UserId und das Land des Benutzers. Die UserId ist der Primärschlüssel der Tabelle. Die UserId wird von Spotify vergeben und ist eindeutig.</description>
+    </item>
+    
+    <item>
+      <title>Frame und Einfügen in Datenbank</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/04_frame_einf%C3%BCgen_in_datenbank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/04_frame_einf%C3%BCgen_in_datenbank/</guid>
+      <description>5.4.1 Frame Aufgabe Der Client sendet regelmäßig ein Frame an den Server. Dieses Frame enthält die Daten, die der Server speichern soll. Der Frame ist eine Json String mit folgendem Aufbau:
+{ &amp;quot;password&amp;quot; : &amp;quot;xxx&amp;quot;, &amp;quot;version&amp;quot; : &amp;quot;2.0&amp;quot;, &amp;quot;time&amp;quot;: &amp;quot;2022-10-30 18:16:45.784911&amp;quot;, &amp;quot;route&amp;quot;: 1, &amp;quot;geo&amp;quot; : { &amp;quot;lat&amp;quot;: 0.0, &amp;quot;long&amp;quot;: 0.0 }, &amp;quot;trackId&amp;quot;: &amp;quot;753KutoAy00apPsplMRetG&amp;quot; }  Beschreibung der Attribute:
+ password - Passwort, das vom Server gesetzt wurde. Dieses Passwort wird vom Client benötigt, um die Daten in die Datenbank zu speichern.</description>
+    </item>
+    
+    <item>
+      <title>Eröffnung</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/05_eroeffnung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/05_eroeffnung/</guid>
+      <description>5.5 Eröffnung (Blackbox) Zweck/Verantwortlichkeit Dieses Subsystem stellt Eröffnungsbibliotheken bereit und implementiert das Polyglot Opening Book-Format. Bei diesem Format handelt es sich gegenwärtig um das einzig geläufige, das nicht proprietär ist. Entsprechende Buchdateien und zugehörige Werkzeuge sind im Internet frei verfügbar.
+Schnittstellen Das Subsystem stellt seine Funktionalität über das Java-Interface de.dokchess.eroeffnung.Eroeffnungsbibliothek bereit. Als Implementierung liegt die Klasse de.dokchess.eroeffnung.polyglot.PolyglotOpeningBook vor.
+Bild: Schnittstelle Eroeffnungsbibliothek, Implementierung PolyglotOpeningBook
+   Methode Kurzbeschreibung     liefereZug Liefert zur angegebenen Stellung einen aus der Bibliothek bekannten Zug, oder null    Tabelle: Methoden der Schnittstelle Eroeffnungsbibliothek</description>
+    </item>
+    
+    <item>
+      <title>Ebene 2: Engine</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/06_ebene_2_engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/06_ebene_2_engine/</guid>
+      <description>5.6 Ebene 2: Engine (Whitebox) Die Engine zerfällt wie in der folgenden Abbildung dargestellt in Zugsuche und Stellungsbewertung. Falls vorhanden wird die Ermittlung des Zuges zunächst an die Eröffnungsbibliothek delegiert. Nur wenn diese keinen Rat weiß, kommt die Zugsuche zum Einsatz.
+Bild: Subsystem Engine, Bausteinsicht, Ebene 2
+   Modul Kurzbeschreibung     Zugsuche Ermittelt zu einer Stellung den unter bestimmten Bedingungen optimalen Zug.   Stellungsbewertung Bewertet eine Stellung aus Sicht eines Spielers.</description>
+    </item>
+    
+    <item>
+      <title>Zugsuche</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/07_zugsuche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/07_zugsuche/</guid>
+      <description>5.7 Zugsuche (Blackbox) Zweck/Verantwortlichkeit Das Modul ermittelt zu einer Stellung den unter bestimmten Bedingungen optimalen Zug. Theoretisch gäbe es im Schach einen generell optimalen Zug. Die hohe Anzahl der möglichen Züge und die damit verbundene schier unglaubliche Anzahl zu bewertender Spielsituationen macht es in der Praxis aber unmöglich, ihn zu bestimmen. Gängige Algorithmen wie der Minimax begnügen sich daher damit, den &amp;ldquo;Spielbaum&amp;rdquo; nur bis zu einer bestimmten Tiefe zu explorieren.</description>
+    </item>
+    
+    <item>
+      <title>Stellungsbewertung</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/08_stellungsbewertung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/08_stellungsbewertung/</guid>
+      <description>5.8 Stellungsbewertung (Blackbox) Zweck/Verantwortlichkeit Das Modul bewertet eine Stellung aus Sicht eines Spielers. Ergebnis ist eine Zahl, wobei 0 eine ausgeglichene Situation beschreibt, eine positive Zahl einen Vorteil für den Spieler, eine negative einen Nachteil. Je höher der Betrag, desto größer der Vor- bzw. Nachteil. Das Modul ermöglicht es so, Stellungen miteinander zu vergleichen.
+Schnittstellen Das Modul stellt seine Funktionalität über die Schnittstelle de.dokchess.engine.bewertung.Bewertung bereit, de.dokchess.engine.bewertung.ReineMaterialBewertung ist eine sehr einfache Implementierung.</description>
+    </item>
+    
+  </channel>
+</rss>

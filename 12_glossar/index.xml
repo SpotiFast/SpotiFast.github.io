@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Glossar on SpotiFast Dokumentation (SWE2 2022)</title>
+    <link>https://spotifast.github.io/12_glossar/</link>
+    <description>Recent content in Glossar on SpotiFast Dokumentation (SWE2 2022)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    
+	<atom:link href="https://spotifast.github.io/12_glossar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Einstieg</title>
+      <link>https://spotifast.github.io/12_glossar/01_einstieg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/12_glossar/01_einstieg/</guid>
+      <description>&amp;ldquo;Das Schachspiel wird zwischen zwei Gegnern gespielt, die ihre Figuren auf einem quadratischen Spielbrett, &amp;lsquo;Schachbrett&amp;rsquo; genannt, ziehen.&amp;rdquo;
+aus den Schachregeln der FIDE
+ Das folgende Glossar erklärt Begriffe aus der Schachwelt, die über den Wortschatz von Wenig- oder Gelegenheitsspielern hinausgehen, sowie Begriffe aus dem Computerschach.
+Details finden Sie in den Schachregeln der FIDE.
+Namen der Schachfiguren Schachbrett-Geometrie  &amp;ldquo;Das Schachbrett besteht aus einem 8 x 8 Gitter von 64 gleich großen Quadraten, die abwechselnd hell und dunkel sind (die &amp;lsquo;weißen&amp;rsquo; und die &amp;lsquo;schwarzen&amp;rsquo; Felder).</description>
+    </item>
+    
+    <item>
+      <title>Begriffe</title>
+      <link>https://spotifast.github.io/12_glossar/01_begriffe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/12_glossar/01_begriffe/</guid>
+      <description>Begriff Erklärung     50-Züge-Regel Regel im Schach, die besagt, dass ein Spieler ein Remis reklamieren kann, wenn 50 Züge lang kein Bauer bewegt und keine Figur geschlagen wurde.   Alpha-Beta-Suche Deutliche Verbesserung des Minimax-Algorithmus, in dem Teile des Suchbaumes &amp;ldquo;weggeschnitten&amp;rdquo; werden können, ohne dabei zu einem anderen Ergebnis zu kommen.   Einstellen Anfängerfehler im Schach. Eine eigene Figur wird eingestellt, wenn sie auf ein vom Gegner angegriffenes Feld gezogen wird und von diesem gefahrlos geschlagen werden kann.</description>
+    </item>
+    
+  </channel>
+</rss>

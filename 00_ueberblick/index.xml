@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Was ist SpotiFast? on SpotiFast Dokumentation (SWE2 2022)</title>
+    <link>https://spotifast.github.io/00_ueberblick/</link>
+    <description>Recent content in Was ist SpotiFast? on SpotiFast Dokumentation (SWE2 2022)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    
+	<atom:link href="https://spotifast.github.io/00_ueberblick/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

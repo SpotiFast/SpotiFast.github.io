@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Einführung und Ziele on SpotiFast Dokumentation (SWE2 2022)</title>
+    <link>https://spotifast.github.io/01_einfuehrung/</link>
+    <description>Recent content in Einführung und Ziele on SpotiFast Dokumentation (SWE2 2022)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    
+	<atom:link href="https://spotifast.github.io/01_einfuehrung/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aufgabenstellung</title>
+      <link>https://spotifast.github.io/01_einfuehrung/01_aufgabenstellung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/01_einfuehrung/01_aufgabenstellung/</guid>
+      <description>1.1 Aufgabenstellung Was ist SpotiFast? Spotifast wertet aus, inwiefern die Geschwindigkeit des Fahrens einen Einfluss auf das Tempo der Musik und auch andere Eigenschaften der Musik hat. Dazu gehören Eigenschaften wie Lautstärke, Tanzbarkeit, Instrumentalität, Live-heit und Sprechkeit. Des Weiteren bildet es auf einer Karte die verschiedenen Strecken ab, welche abhängig vom Lied und von der Geschwindigkeit anders farbig sind. Wann Daten gesammelt werden, entscheidet der Benutzer und jeder Zeitabschnitt wird in einer eigenen Route gespeichert, die einzelnd ausgewertet wird.</description>
+    </item>
+    
+    <item>
+      <title>Qualitätsziele</title>
+      <link>https://spotifast.github.io/01_einfuehrung/02_qualitaetsziele/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/01_einfuehrung/02_qualitaetsziele/</guid>
+      <description>1.2 Qualitätsziele Die folgende Tabelle beschreibt die zentralen Qualitätsziele von SpotiFast, wobei die Reihenfolge eine grobe Orientierung bezüglich der Wichtigkeit vorgibt.
+   Qualitätsziel Motivation und Erläuterung     Benutzbarkeit Da SpotiFast eine App ist, die gerne und einfach von jedem genutzt werden soll, ist eine gute Verständlichkeit und Bedienbarkeit der App wichtig.   Relativ schnelle Antworten auf Anfragen (Zeitverhalten) SpotiFast braucht nicht zu lange, um Daten darzustellen und zu verarbeiten.</description>
+    </item>
+    
+    <item>
+      <title>Stakeholder</title>
+      <link>https://spotifast.github.io/01_einfuehrung/03_stakeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/01_einfuehrung/03_stakeholder/</guid>
+      <description>1.3 Stakeholder Die folgende Tabelle stellt die Stakeholder von DokChess und ihre jeweilige Intention dar.
+   Wer? Interesse, Bezug     Benutzer und Benutzerinnen  wollen auf anschauliche Weise angezeigt bekommen, ob und wie ihr Musikgeschmack von der gefahrenen Geschwindigkeit abhängt möchten ihre gefahrenen Routen und gehörten Lieder sehen wollen schnelle Reaktionszeiten und wenig Speicherverbrauch   Projektmanager, Auftraggeber  Lernerfolg der Studenten strukturierte und arbeitsteilige Erstellung eines Rechnerprogramms  dem Erstellen eines aus mehreren Komponenten bestehenden, verteilten Systems, welches eine Datenbank beinhaltet, automatische Tests durchführt und Entwurfsmuster umsetzt    Softwareentwickler Erfüllung des Auftrags  Lernerfolg  Benutzung der App       Wer?</description>
+    </item>
+    
+  </channel>
+</rss>

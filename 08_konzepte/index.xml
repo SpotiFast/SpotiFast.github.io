@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Querschnittliche Konzepte on SpotiFast Dokumentation (SWE2 2022)</title>
+    <link>https://spotifast.github.io/08_konzepte/</link>
+    <description>Recent content in Querschnittliche Konzepte on SpotiFast Dokumentation (SWE2 2022)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    
+	<atom:link href="https://spotifast.github.io/08_konzepte/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test</title>
+      <link>https://spotifast.github.io/08_konzepte/01_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/01_test/</guid>
+      <description>8.1.1 Test am Server Der Server wurde in im Editor Visuaql Studio Code geschrieben. Damit ist es möglich, den Code zu testen und mit der Erweiterung Test grafisch dar zu stellen. Die Test befinden sich im Ordner &amp;lsquo;/scr&amp;rsquo;.
+Test der Datenbank und der JSONValidation Es werden bei der Datenbank getestet, ob das Hinzufügen der Daten wie geplant funktioniert. Hierzu wird eine Mataklasse erstellt, die die Datenbankverbindung herstellt. Diese Klasse wird in den Testklassen verwendet.</description>
+    </item>
+    
+    <item>
+      <title>Validierung</title>
+      <link>https://spotifast.github.io/08_konzepte/02_validierung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/02_validierung/</guid>
+      <description>8.2 Validierung In diesem Kapitel wird auf die Validierung eingegangen, beispielhaft wird die Validierung des Frames gezeigt.
+Der Konstruktor der JSONValidator-Klasse erwartet als Parameter einen String, der den Pfad zur JSON-Schema-Datei enthält. Die den Json als Dictionary, welche überprüft werden soll, sowie das Passwort, welches für die Verschlüsselung verwendet wurde. Außerdem die Version des Frames, die überprüft werden soll.
+Password und Version sind optional Parametrer. Wenn diese nicht angegeben werden, entfällt die Überprüfung des Passworts und der Version.</description>
+    </item>
+    
+    <item>
+      <title>SQLAlchemyAutoSchema</title>
+      <link>https://spotifast.github.io/08_konzepte/03_sqlalchemyautoschema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/03_sqlalchemyautoschema/</guid>
+      <description>8.3 SQLAlchemyAutoSchema In diesem Kapitel wird auf das SQLAlchemyAutoSchema eingegangen. Dieses Schema wird verwendet, um die Datenbanktabellen in JSON-Schemas zu übersetzen. Dieses ist nützlich, weil einige Anfragen vom Client kommen um zum Beispiel alle Position einer Route zu bekommen.
+Beispiel anhand /getRoute/{routeId} Es folgt ein Beispiel mit einem Code Snippet, wie das Schema für die Route erstellt wird.
+class PositionSchemaWithoutRoute(SQLAlchemyAutoSchema): class Meta: model = Position load_instance = True include_relationships = True exclude = (&amp;quot;route&amp;quot;,)  Hierbei werden nun alle Attribute der Position ausgelesen und in das Schema geschrieben.</description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>https://spotifast.github.io/08_konzepte/05_flutter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/05_flutter/</guid>
+      <description>8.5 Flutter Die SpotiFast App wird in dem Framework Flutter und in der Programmiersprache Dart geschrieben. Dementsprechend werden auch die Konzepte von Flutter und Dart angewendet.
+Die Oberfläche ist aus Widgets aufgebaut, die ineinander geschachtelt sind. Ein Widget beschreibt, wie seine Oberfläche aussehen soll. Zur Verschachtelung und Übergabe von anderen Widgets, den Kinder Widgets, wird die build-Methode überschrieben. Darin werden die Kinder Widgets aufgerufen und gebaut. Allgemein gibt es eine Unterscheidung zwischen Stateless und Stateful Widgets.</description>
+    </item>
+    
+    <item>
+      <title>Benutzungsoberfläche</title>
+      <link>https://spotifast.github.io/08_konzepte/06_benutzungsoberfl%C3%A4che/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/06_benutzungsoberfl%C3%A4che/</guid>
+      <description>8.6 Benutzungsoberfläche Für Verbesserungen und Erweiterungen von DokChess durch Dritte sind die vorhandenen Analysemöglichkeiten von Interesse, insbesondere bei Fehlverhalten.
+Die Funktionalität selbst lässt sich gut mit Unit-Tests überprüfen. Das gilt insbesondere für die korrekte Implementierung der Spielregeln, für die Spielweise der Engine (→ 8.7 „Testbarkeit“) und auch für eigene Erweiterungen.
+Innerhalb von DokChess gibt es daher keine feinkörnigen Logging-Ausgaben; Lösungen wie log4j kommen nicht zum Einsatz. Auf diese Weise wird eine Abhängigkeit zu einer Fremdbibliothek, die sich durch den ganzen Quelltext ziehen würde, vermieden und der Code nicht durch diesen Aspekt verschmutzt.</description>
+    </item>
+    
+    <item>
+      <title>Tests</title>
+      <link>https://spotifast.github.io/08_konzepte/01_tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/01_tests/</guid>
+      <description> 8.1 Tests 8.1.1 Tests Client 8.1.2 Tests Server </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://spotifast.github.io/08_konzepte/0x_passwoerter_tokens_im_repo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/0x_passwoerter_tokens_im_repo/</guid>
+      <description>TODO:</description>
+    </item>
+    
+  </channel>
+</rss>

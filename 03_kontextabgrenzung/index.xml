@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kontextabgrenzung on SpotiFast Dokumentation (SWE2 2022)</title>
+    <link>https://spotifast.github.io/03_kontextabgrenzung/</link>
+    <description>Recent content in Kontextabgrenzung on SpotiFast Dokumentation (SWE2 2022)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    
+	<atom:link href="https://spotifast.github.io/03_kontextabgrenzung/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Technischer Kontext</title>
+      <link>https://spotifast.github.io/03_kontextabgrenzung/01_technischer_kontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/03_kontextabgrenzung/01_technischer_kontext/</guid>
+      <description>3.1 Technischer Kontext Der Kontext, in welchem SpotiFast arbeitet, ist in der nachfolgenden Abbildung dargestellt.
+Bild: Interaktion zwischen dem Benutzer, SpotiFast und Spotify (Teile des eigenen Systems sind grün markiert)
+Der Benutzer interagiert auf seinem Endgerät mit dem Spotify Client und dem SpotiFast Client. Über den Spotify Client wird wie üblich Musik abgespielt. Im SpotiFast Client aktiviert/deaktiviert der Benutzer das Tracking und kann seine Statistiken/Auswertungen einsehen. Der SpotiFast Client nutzt die Development API von Spotify, um die aktuell abspielende Musik des Nutzers auszulesen.</description>
+    </item>
+    
+  </channel>
+</rss>

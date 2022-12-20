@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SpotiFast Dokumentation (SWE2 2022)</title>
+    <link>https://spotifast.github.io/</link>
+    <description>Recent content on SpotiFast Dokumentation (SWE2 2022)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    
+	<atom:link href="https://spotifast.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Frontend-Anbindung</title>
+      <link>https://spotifast.github.io/09_entscheidungen/01_anbindung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/09_entscheidungen/01_anbindung/</guid>
+      <description>9.1 Wie kommuniziert die Engine mit der Außenwelt? Zur Fragestellung Als zentrale Anforderung muss DokChess mit vorhandenen Schach-Frontends zusammenarbeiten. Wie erfolgt die Anbindung?
+Es sind eine ganze Reihe grafische Oberflächen speziell zum Spiel gegen Schach-Programme verfügbar. Darüber hinaus gibt es für Schachinteressierte Softwarelösungen mit größerem Leistungsumfang. Neben dem Spiel „Mensch gegen Maschine“ bieten sie weitere Funktionalität, etwa zur Analyse von Partien. Mit der Zeit werden neue Schach-Programme hinzukommen – und andere gegebenenfalls vom Markt verschwinden.</description>
+    </item>
+    
+    <item>
+      <title>Qualitätsbaum</title>
+      <link>https://spotifast.github.io/10_qualitaetsanforderungen/01_qualitaetsbaum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/10_qualitaetsanforderungen/01_qualitaetsbaum/</guid>
+      <description>10.1 Qualitätsbaum Das folgende Bild gibt in Form eines sogenannten Qualitätsbaumes (englisch: Utitlty Tree) einen Überblick über die relevanten Qualitätsmerkmale und ordnet ihnen Szenarien als Beispiele zu. Die Qualitätsziele sind in der Abbildung ebenfalls enthalten und verweisen jeweils auf die Szenerien, welche sie illustrieren.</description>
+    </item>
+    
+    <item>
+      <title>Sicherheit</title>
+      <link>https://spotifast.github.io/11_risiken/01_sicherheit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/11_risiken/01_sicherheit/</guid>
+      <description>11.1 Risiko: Sicherheit an API Das Risiko der Sicherheit an der API ist sehr hoch, da die API von außen erreichbar ist. Es ist daher wichtig, dass die API nur von vertrauenswürdigen Quellen erreichbar ist. Es wird nun eine minimale Authentifizierung eingeführt, um die Sicherheit zu erhöhen. Bei den Frames die an die API gesendet werden, wird ein Passwort mitgeschickt. Dieses Passwort ist Server- und Client-seitig gespeichert. Beim Empfangen der Frames wird das Passwort mit dem gespeicherten Passwort verglichen.</description>
+    </item>
+    
+    <item>
+      <title>Technisch</title>
+      <link>https://spotifast.github.io/02_randbedingungen/01_technisch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/02_randbedingungen/01_technisch/</guid>
+      <description>2.1 Technische Randbedingungen    Randbedingung Erläuterungen, Hintergrund     Hardwareausstattung Jeder Beteiligte benötigt eine moderate Hardwareausstattung. Die Entwicklung soll auf einem Laptop stattfinden. Um Testdaten zu generieren, wird ein Handy benötigt. Als Server steht eine VM auf dem Etmt-Server zur Verfügung.   Betriebssysteme Für die VM soll ein &amp;ldquo;für Server übliches&amp;rdquo; Betriebssystem verwendet werden. Die Entwicklung des Clients soll auf mehreren Betriebssystemen möglich sein, da im Team verschiedene Betriebssysteme verwendet werden (Windows 10 &amp;amp; macOS).</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://spotifast.github.io/08_konzepte/01_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/01_test/</guid>
+      <description>8.1.1 Test am Server Der Server wurde in im Editor Visuaql Studio Code geschrieben. Damit ist es möglich, den Code zu testen und mit der Erweiterung Test grafisch dar zu stellen. Die Test befinden sich im Ordner &amp;lsquo;/scr&amp;rsquo;.
+Test der Datenbank und der JSONValidation Es werden bei der Datenbank getestet, ob das Hinzufügen der Daten wie geplant funktioniert. Hierzu wird eine Mataklasse erstellt, die die Datenbankverbindung herstellt. Diese Klasse wird in den Testklassen verwendet.</description>
+    </item>
+    
+    <item>
+      <title>Aufwand</title>
+      <link>https://spotifast.github.io/11_risiken/02_aufwand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/11_risiken/02_aufwand/</guid>
+      <description>11.2 Risiko: Aufwand der Implementierung zu hoch Es liegt keinerlei Erfahrung mit der Schachprogrammierung vor. Gleichzeitig wirken die Spielregeln, die wir komplett realisieren sollen (vgl. Aufgabenstellung), umfangreich und kompliziert. Die Figurenarten ziehen unterschiedlich, hinzu kommen Spezialregeln wie Patt und Umwandlung. Bei Rochade und en passant ist die Partiehistorie, und nicht nur die aktuelle Situation auf dem Brett relevant.
+Die Programmierung der Algorithmen ist ebenfalls nicht-trivial. Für die Anbindung von Eröffnungsbibliotheken und Endspieldatenbanken ist eine umfangreiche Recherche erforderlich.</description>
+    </item>
+    
+    <item>
+      <title>Organisatorisch</title>
+      <link>https://spotifast.github.io/02_randbedingungen/02_organisatorisch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/02_randbedingungen/02_organisatorisch/</guid>
+      <description>2.2 Organisatorische Randbedingungen    Randbedingung Erläuterungen, Hintergrund     Zeitrahmen Der Zeitrahmen ist sehr begrenzt für dieses Projekt. Die Entwicklung soll innerhalb von 2 1&amp;frasl;2 Monaten abgeschlossen sein. Die Bearbeitungszeit begann am 4. Oktober 2022 und geht bis zum 23. Dezember 2022.   Organisation der Teams Um die Bearbeitungszeit zu verkürzen, wird das Projekt in zwei Teams bearbeitet. Die Teams arbeiten parallel und organisieren sich selbst.</description>
+    </item>
+    
+    <item>
+      <title>Qualitätsszenarien</title>
+      <link>https://spotifast.github.io/10_qualitaetsanforderungen/02_qualitaetsszenarien/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/10_qualitaetsanforderungen/02_qualitaetsszenarien/</guid>
+      <description>10.2 Qualitätsszenarien Die Anfangsbuchstaben der Bezeichner (IDs) der Szenarien in der folgenden Tabelle stehen jeweils für das übergeordnete Qualitätsmerkmal, W beispielsweise für Wartbarkeit. Diese Bezeichner finden auch im Qualitätsbaum Verwendung. Nicht immer lassen sich die Szenarien eindeutig einem Merkmal zuordnen. Sie treten daher mitunter mehrmals im Qualitätsbaum auf.
+   ID Szenario     F01 Die abgefahrenen Punkte auf der angezeigten Strecke weichen höchstens um 100 Meter von der tatsächlichen Position ab, außer es bestand eine schlechte Internetverbindung beim Aufzeichnen.</description>
+    </item>
+    
+    <item>
+      <title>Server</title>
+      <link>https://spotifast.github.io/09_entscheidungen/02_server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/09_entscheidungen/02_server/</guid>
+      <description>9.2 Server mit OR-Mapper Zur Fragestellung Sollten wir in unserem Projekt OR-Mapper verwenden, um die Verbindung zwischen der Anwendung und der Datenbank zu verwalten, oder sollten wir direkt auf die Datenbank zugreifen? Welche Vorteile bietet die Verwendung von OR-Mappern gegenüber direktem Zugriff auf die Datenbank?
+Betrachtete Alternativen  Option (1):  Eine Alternative zu OR-Mappern ist der direkte Zugriff auf die Datenbank mithilfe von SQL (Structured Query Language). Dies bedeutet, dass die Anwendung direkt SQL-Anweisungen ausführt, um Daten aus der Datenbank abzurufen, zu aktualisieren oder zu löschen.</description>
+    </item>
+    
+    <item>
+      <title>Validierung</title>
+      <link>https://spotifast.github.io/08_konzepte/02_validierung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/02_validierung/</guid>
+      <description>8.2 Validierung In diesem Kapitel wird auf die Validierung eingegangen, beispielhaft wird die Validierung des Frames gezeigt.
+Der Konstruktor der JSONValidator-Klasse erwartet als Parameter einen String, der den Pfad zur JSON-Schema-Datei enthält. Die den Json als Dictionary, welche überprüft werden soll, sowie das Passwort, welches für die Verschlüsselung verwendet wurde. Außerdem die Version des Frames, die überprüft werden soll.
+Password und Version sind optional Parametrer. Wenn diese nicht angegeben werden, entfällt die Überprüfung des Passworts und der Version.</description>
+    </item>
+    
+    <item>
+      <title>Konventionen</title>
+      <link>https://spotifast.github.io/02_randbedingungen/03_konventionen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/02_randbedingungen/03_konventionen/</guid>
+      <description> 2.3 Konventionen    Konvention Erläuterungen, Hintergrund     Dokumentation Terminologie und Gliederung nach arc42   Sprache Code einheitlich in Englisch (Bezeichner, Kommentare, Komponenten, Schnittstellen, JSON-Schema&amp;hellip;). Diagramme sollen möglichst nah am Code sein, daher auch in Englisch. Der Fließtext der arc42-Dokumentation ist in Deutsch zu verfassen.    </description>
+    </item>
+    
+    <item>
+      <title>SQLAlchemyAutoSchema</title>
+      <link>https://spotifast.github.io/08_konzepte/03_sqlalchemyautoschema/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/03_sqlalchemyautoschema/</guid>
+      <description>8.3 SQLAlchemyAutoSchema In diesem Kapitel wird auf das SQLAlchemyAutoSchema eingegangen. Dieses Schema wird verwendet, um die Datenbanktabellen in JSON-Schemas zu übersetzen. Dieses ist nützlich, weil einige Anfragen vom Client kommen um zum Beispiel alle Position einer Route zu bekommen.
+Beispiel anhand /getRoute/{routeId} Es folgt ein Beispiel mit einem Code Snippet, wie das Schema für die Route erstellt wird.
+class PositionSchemaWithoutRoute(SQLAlchemyAutoSchema): class Meta: model = Position load_instance = True include_relationships = True exclude = (&amp;quot;route&amp;quot;,)  Hierbei werden nun alle Attribute der Position ausgelesen und in das Schema geschrieben.</description>
+    </item>
+    
+    <item>
+      <title>Spielstärke</title>
+      <link>https://spotifast.github.io/11_risiken/03_spielstaerke/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/11_risiken/03_spielstaerke/</guid>
+      <description>11.3 Risiko: Erreichen der Spielstärke scheitert Die Qualitätsziele fordern sowohl eine akzeptable Spielstärke wie auch eine einfache, leicht zugängliche Lösung. Zudem gibt es Anforderungen bezüglich Effizienz. Es ist unsicher, ob die anvisierte Java-Lösung mit objektorientiertem Domänenmodell und einfacher Zugauswahl diese konkurrierenden Ziele erreichen kann.
+Das Risiko manifestiert sich durch zu schlechte Spielstärke, zu lange Wartezeiten oder beides. Insbesondere bei Live-Vorführungen in Vorträgen wäre das unschön, da die Zuhörer die Lösung dann gar nicht als solche wahrnehmen (sondern als Spielerei).</description>
+    </item>
+    
+    <item>
+      <title>Flutter</title>
+      <link>https://spotifast.github.io/08_konzepte/05_flutter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/05_flutter/</guid>
+      <description>8.5 Flutter Die SpotiFast App wird in dem Framework Flutter und in der Programmiersprache Dart geschrieben. Dementsprechend werden auch die Konzepte von Flutter und Dart angewendet.
+Die Oberfläche ist aus Widgets aufgebaut, die ineinander geschachtelt sind. Ein Widget beschreibt, wie seine Oberfläche aussehen soll. Zur Verschachtelung und Übergabe von anderen Widgets, den Kinder Widgets, wird die build-Methode überschrieben. Darin werden die Kinder Widgets aufgerufen und gebaut. Allgemein gibt es eine Unterscheidung zwischen Stateless und Stateful Widgets.</description>
+    </item>
+    
+    <item>
+      <title>Benutzungsoberfläche</title>
+      <link>https://spotifast.github.io/08_konzepte/06_benutzungsoberfl%C3%A4che/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/06_benutzungsoberfl%C3%A4che/</guid>
+      <description>8.6 Benutzungsoberfläche Für Verbesserungen und Erweiterungen von DokChess durch Dritte sind die vorhandenen Analysemöglichkeiten von Interesse, insbesondere bei Fehlverhalten.
+Die Funktionalität selbst lässt sich gut mit Unit-Tests überprüfen. Das gilt insbesondere für die korrekte Implementierung der Spielregeln, für die Spielweise der Engine (→ 8.7 „Testbarkeit“) und auch für eigene Erweiterungen.
+Innerhalb von DokChess gibt es daher keine feinkörnigen Logging-Ausgaben; Lösungen wie log4j kommen nicht zum Einsatz. Auf diese Weise wird eine Abhängigkeit zu einer Fremdbibliothek, die sich durch den ganzen Quelltext ziehen würde, vermieden und der Code nicht durch diesen Aspekt verschmutzt.</description>
+    </item>
+    
+    <item>
+      <title>Einstieg</title>
+      <link>https://spotifast.github.io/04_loesungsstrategie/01_einstieg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/04_loesungsstrategie/01_einstieg/</guid>
+      <description>4.1 Einstieg in die Lösungsstrategie Die folgende Tabelle stellt die Qualitätsziele von DokChess (siehe Abschnitt 1.2) passenden Architekturansätzen gegenüber, und erleichtert so einen Einstieg in die Lösung.
+   Qualitätsziel Dem zuträgliche Ansätze in der Architektur     Zugängliches Beispiel (Analysierbarkeit) Architekturüberblick gegliedert nach arc42Explizites, objektorientiertes DomänenmodellModul-, Klassen- und Methodennamen in Deutsch, um englische Schachbegriffe zu vermeidenAusführliche Dokumentation der öffentlichen Schnittstellen in javadoc   Einladende Experimentierplattform (Änderbarkeit) verbreitete Programmiersprache Java, →&amp;nbsp;(a)Schnittstellen für Kernabstraktionen (z.</description>
+    </item>
+    
+    <item>
+      <title>Einstieg</title>
+      <link>https://spotifast.github.io/12_glossar/01_einstieg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/12_glossar/01_einstieg/</guid>
+      <description>&amp;ldquo;Das Schachspiel wird zwischen zwei Gegnern gespielt, die ihre Figuren auf einem quadratischen Spielbrett, &amp;lsquo;Schachbrett&amp;rsquo; genannt, ziehen.&amp;rdquo;
+aus den Schachregeln der FIDE
+ Das folgende Glossar erklärt Begriffe aus der Schachwelt, die über den Wortschatz von Wenig- oder Gelegenheitsspielern hinausgehen, sowie Begriffe aus dem Computerschach.
+Details finden Sie in den Schachregeln der FIDE.
+Namen der Schachfiguren Schachbrett-Geometrie  &amp;ldquo;Das Schachbrett besteht aus einem 8 x 8 Gitter von 64 gleich großen Quadraten, die abwechselnd hell und dunkel sind (die &amp;lsquo;weißen&amp;rsquo; und die &amp;lsquo;schwarzen&amp;rsquo; Felder).</description>
+    </item>
+    
+    <item>
+      <title>Aufbau</title>
+      <link>https://spotifast.github.io/04_loesungsstrategie/02_aufbau/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/04_loesungsstrategie/02_aufbau/</guid>
+      <description>4.2 Der Aufbau von DokChess DokChess ist als Java-Programm mit main-Routine realisiert. Es zerfällt grob in folgende Teile:
+ eine Implementierung der Schachregeln die eigentliche Engine, welche die Züge ermittelt die Anbindung an eine grafische Benutzeroberfläche über das XBoard-Protokoll einen Adapter für ein konkretes Eröffnungsbibliotheksformat (Polyglot Opening Book)  Diese Zerlegung ermöglicht es, Dinge wie das Kommunikationsprotokoll oder das Eröffnungsbibliotheksformat bei Bedarf auszutauschen. Alle Teile sind durch Schnittstellen abstrahiert, die Implementierungen werden per Dependency Injection zusammengesteckt (→ 5.</description>
+    </item>
+    
+    <item>
+      <title>Ebene 1</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/01_ebene_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/01_ebene_1/</guid>
+      <description>5.1 Ebene 1 DokChess zerfällt wie in Bild unten dargestellt in vier Subsysteme. Die gestrichelten Pfeile stellen fachliche Abhängigkeiten der Subsysteme untereinander dar (&amp;ldquo;x -&amp;gt; y&amp;rdquo; für &amp;ldquo;x ist abhängig von y&amp;rdquo;). Die Kästchen auf der Membran des Systems sind Interaktionspunkte mit Außenstehenden (→ 3.2 Kontextabgrenzung).
+Bild: DokChess, Bausteinsicht, Ebene 1
+   Subsystem Kurzbeschreibung     XBoard-Protokoll Realisiert die Kommunikation mit einem Client mit Hilfe des XBoard-Protokolls.</description>
+    </item>
+    
+    <item>
+      <title>Infrastruktur Windows</title>
+      <link>https://spotifast.github.io/07_verteilungssicht/01_infrastruktur_windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/07_verteilungssicht/01_infrastruktur_windows/</guid>
+      <description>7.1 Infrastruktur Windows Das Verteilungsdiagramm im Bild unten zeigt den Einsatz von DokChess unter Windows ohne Eröffnungsbibliothek. Als Frontend wird exemplarisch Arena verwendet (→ Entscheidung 9.1 „Wie kommuniziert die Engine mit der Außenwelt?“).
+Bild: Deployment von DokChess auf einem Windows-PC
+Software-Voraussetzungen auf dem PC:
+ Java Runtime Environment SE 11 (oder höher) Die JVM (javaw.exe) muss im Pfad liegen, ansonsten ist dokchess.bat anzupassen Arena (siehe http://www.playwitharena.de)  DokChess.jar enthält den kompilierten Java-Quelltext sämtlicher Module und alle nötigen Abhängigkeiten („Über-jar“).</description>
+    </item>
+    
+    <item>
+      <title>Spotify Autorisierung</title>
+      <link>https://spotifast.github.io/06_laufzeitsicht/01_spotify_auth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/06_laufzeitsicht/01_spotify_auth/</guid>
+      <description>6.1 Spotify Autorisierung Die Kommunikation mit Spotify erfolgt durch die Dart-Bibliothek spotify-dart. Diese Bibliothek ist eine Abstraktion der Spotify Web API und erlaubt einen vereinfachten Zugriff auf die API Endpunkte. Auch die Autorisierung via OAuth2 wird zum Teil von der Bibliothek übernommen. Nachfolgend ist der Autorisierungsprozess und der Einsatz der Bibliothek in einem Sequenzdiagramm dargestellt.
+Bild: Autorisierungsprozess und Einsatz der Bibliothek (Teile des eigenen Systems sind grün markiert)
+Für die Verwendung der Spotify Web API ist es notwendig, die Anwendung bei Spotify zu registrieren.</description>
+    </item>
+    
+    <item>
+      <title>Technischer Kontext</title>
+      <link>https://spotifast.github.io/03_kontextabgrenzung/01_technischer_kontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/03_kontextabgrenzung/01_technischer_kontext/</guid>
+      <description>3.1 Technischer Kontext Der Kontext, in welchem SpotiFast arbeitet, ist in der nachfolgenden Abbildung dargestellt.
+Bild: Interaktion zwischen dem Benutzer, SpotiFast und Spotify (Teile des eigenen Systems sind grün markiert)
+Der Benutzer interagiert auf seinem Endgerät mit dem Spotify Client und dem SpotiFast Client. Über den Spotify Client wird wie üblich Musik abgespielt. Im SpotiFast Client aktiviert/deaktiviert der Benutzer das Tracking und kann seine Statistiken/Auswertungen einsehen. Der SpotiFast Client nutzt die Development API von Spotify, um die aktuell abspielende Musik des Nutzers auszulesen.</description>
+    </item>
+    
+    <item>
+      <title>Tests</title>
+      <link>https://spotifast.github.io/08_konzepte/01_tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/01_tests/</guid>
+      <description> 8.1 Tests 8.1.1 Tests Client 8.1.2 Tests Server </description>
+    </item>
+    
+    <item>
+      <title>Frames senden</title>
+      <link>https://spotifast.github.io/06_laufzeitsicht/02_frame_senden/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/06_laufzeitsicht/02_frame_senden/</guid>
+      <description>6.2 Frames senden Eine der wichtigsten Aufgaben des Systems ist die Übertragung der Frames. Die Frames werden dabei zunächst im Client erzeugt und anschließend an den Server gesendet. Dieser Ablauf ist im folgenden Diagramm dargestellt.
+Bild: Erzeugung und Übertragung eines Frames (Teile des eigenen Systems sind grün markiert)
+Nach dem Starten des Trackings wird die User-ID (Benutzername) von Spotify abgefragt. Die UserId wird dann an den Server übermittelt und eine neue Routen-ID wird zurückgegeben.</description>
+    </item>
+    
+    <item>
+      <title>Spielstrategie</title>
+      <link>https://spotifast.github.io/04_loesungsstrategie/03_spielstrategie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/04_loesungsstrategie/03_spielstrategie/</guid>
+      <description>4.3 Spielstrategie Für die Integration von Eröffnungsbibliotheken wurde das Dateiformat „Polyglot Opening Book“ implementiert (→ Bausteinsicht 5.5 “Eröffnung“), DokChess antwortet dadurch zu Beginn mit „Buchwissen“.
+Für die Spielstrategie im weiteren Partieverlauf ist ein klassischer Minimax­-Algorithmus mit fester Suchtiefe im Spielbaum verantwortlich. Dessen Basis-Implementierung ist nicht nebenläufig, die Bewertung einer Stellung an einem Terminalknoten im Spielbaum basiert ausschließlich auf dem Material (→ Bausteinsicht Ebene 2, 5.6 “Engine“). Diese einfachen Implementierungen erfüllen unter den gegebenen Randbedingungen bereits die Qualitätsszenarien.</description>
+    </item>
+    
+    <item>
+      <title>XBoard-Protokoll</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/02_xboard-protokoll/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/02_xboard-protokoll/</guid>
+      <description>5.2 XBoard-Protokoll (Blackbox) Zweck/Verantwortlichkeit Dieses Subsystem realisiert die Kommunikation mit einem Client (z.B. einer grafischen Oberfläche) mit Hilfe des textbasierten XBoard-Protokolls (→ Entscheidung 9.1). Das Subsystem liest Befehle über die Standardeingabe ein, prüft sie gegen die Spielregeln und setzt sie für die Engine um. Antworten der Engine (insbesondere ihre Züge) werden vom Subsystem als Ereignisse entgegengenommen, gemäß Protokoll formatiert und über die Standardausgabe zurückgesendet. Das Subsystem treibt somit das ganze Spielgeschehen.</description>
+    </item>
+    
+    <item>
+      <title>Anbindung</title>
+      <link>https://spotifast.github.io/04_loesungsstrategie/04_anbindung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/04_loesungsstrategie/04_anbindung/</guid>
+      <description>4.4 Die Anbindung DokChess besitzt keine grafische Benutzeroberfläche; die Kommunikation erfolgt stattdessen über die Standardein­- und -­ausgabe. Als Kommunikationsprotokoll kommt das textbasierte XBoard-­Protokoll zum Einsatz (→ Entscheidung 9.1 „Wie kommuniziert die Engine mit der Außenwelt?“). DokChess lässt sich interaktiv per Kommandozeile bedienen, wenn man die XBoard­-Kommandos kennt und die Engine-Antworten zu deuten weiß (→ Konzept 8.3 „Benutzungsoberfläche“), siehe folgendes Bild.
+Die eigentliche Engine von DokChess wird dabei über einen reaktiven Ansatz („Reactive Extensions“) angebunden (→ 6.</description>
+    </item>
+    
+    <item>
+      <title>Aufbau Datenbank</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/03_aufbau_datenbank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/03_aufbau_datenbank/</guid>
+      <description>5.3 Aufbau Datenbank Bild: Physisches Schema der Datenbank
+Im Folgenden wird das physische Schema der Datenbank beschrieben. Die Datenbank besteht aus 3 Tabellen, welche in der Abbildung dargestellt sind. Die Tabellen werden im Folgenden beschrieben.
+Tabelle user Die Tabelle user enthält die Daten der Benutzer. Die Daten sind die UserId und das Land des Benutzers. Die UserId ist der Primärschlüssel der Tabelle. Die UserId wird von Spotify vergeben und ist eindeutig.</description>
+    </item>
+    
+    <item>
+      <title>Routen anzeigen</title>
+      <link>https://spotifast.github.io/06_laufzeitsicht/03_route_anzeigen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/06_laufzeitsicht/03_route_anzeigen/</guid>
+      <description>6.3 Routen anzeigen Aufgenommene Routen können vom Benutzer in der App auf einer Karte angezeigt werden. Der Ablauf hierfür ist im folgenden Diagramm dargestellt.
+Bild: Auswählen und Anzeigen einer Route (Teile des eigenen Systems sind grün markiert)
+Beim Aufbauen der App wird von der View die Liste aller Routen-IDs des Benutzers angefordert. Die Routen werden dann in einer Liste angezeigt, von wo aus der Benutzer eine der Routen auswählen kann.</description>
+    </item>
+    
+    <item>
+      <title>Frame und Einfügen in Datenbank</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/04_frame_einf%C3%BCgen_in_datenbank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/04_frame_einf%C3%BCgen_in_datenbank/</guid>
+      <description>5.4.1 Frame Aufgabe Der Client sendet regelmäßig ein Frame an den Server. Dieses Frame enthält die Daten, die der Server speichern soll. Der Frame ist eine Json String mit folgendem Aufbau:
+{ &amp;quot;password&amp;quot; : &amp;quot;xxx&amp;quot;, &amp;quot;version&amp;quot; : &amp;quot;2.0&amp;quot;, &amp;quot;time&amp;quot;: &amp;quot;2022-10-30 18:16:45.784911&amp;quot;, &amp;quot;route&amp;quot;: 1, &amp;quot;geo&amp;quot; : { &amp;quot;lat&amp;quot;: 0.0, &amp;quot;long&amp;quot;: 0.0 }, &amp;quot;trackId&amp;quot;: &amp;quot;753KutoAy00apPsplMRetG&amp;quot; }  Beschreibung der Attribute:
+ password - Passwort, das vom Server gesetzt wurde. Dieses Passwort wird vom Client benötigt, um die Daten in die Datenbank zu speichern.</description>
+    </item>
+    
+    <item>
+      <title>Aufgabenstellung</title>
+      <link>https://spotifast.github.io/01_einfuehrung/01_aufgabenstellung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/01_einfuehrung/01_aufgabenstellung/</guid>
+      <description>1.1 Aufgabenstellung Was ist SpotiFast? Spotifast wertet aus, inwiefern die Geschwindigkeit des Fahrens einen Einfluss auf das Tempo der Musik und auch andere Eigenschaften der Musik hat. Dazu gehören Eigenschaften wie Lautstärke, Tanzbarkeit, Instrumentalität, Live-heit und Sprechkeit. Des Weiteren bildet es auf einer Karte die verschiedenen Strecken ab, welche abhängig vom Lied und von der Geschwindigkeit anders farbig sind. Wann Daten gesammelt werden, entscheidet der Benutzer und jeder Zeitabschnitt wird in einer eigenen Route gespeichert, die einzelnd ausgewertet wird.</description>
+    </item>
+    
+    <item>
+      <title>Begriffe</title>
+      <link>https://spotifast.github.io/12_glossar/01_begriffe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/12_glossar/01_begriffe/</guid>
+      <description>Begriff Erklärung     50-Züge-Regel Regel im Schach, die besagt, dass ein Spieler ein Remis reklamieren kann, wenn 50 Züge lang kein Bauer bewegt und keine Figur geschlagen wurde.   Alpha-Beta-Suche Deutliche Verbesserung des Minimax-Algorithmus, in dem Teile des Suchbaumes &amp;ldquo;weggeschnitten&amp;rdquo; werden können, ohne dabei zu einem anderen Ergebnis zu kommen.   Einstellen Anfängerfehler im Schach. Eine eigene Figur wird eingestellt, wenn sie auf ein vom Gegner angegriffenes Feld gezogen wird und von diesem gefahrlos geschlagen werden kann.</description>
+    </item>
+    
+    <item>
+      <title>Eröffnung</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/05_eroeffnung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/05_eroeffnung/</guid>
+      <description>5.5 Eröffnung (Blackbox) Zweck/Verantwortlichkeit Dieses Subsystem stellt Eröffnungsbibliotheken bereit und implementiert das Polyglot Opening Book-Format. Bei diesem Format handelt es sich gegenwärtig um das einzig geläufige, das nicht proprietär ist. Entsprechende Buchdateien und zugehörige Werkzeuge sind im Internet frei verfügbar.
+Schnittstellen Das Subsystem stellt seine Funktionalität über das Java-Interface de.dokchess.eroeffnung.Eroeffnungsbibliothek bereit. Als Implementierung liegt die Klasse de.dokchess.eroeffnung.polyglot.PolyglotOpeningBook vor.
+Bild: Schnittstelle Eroeffnungsbibliothek, Implementierung PolyglotOpeningBook
+   Methode Kurzbeschreibung     liefereZug Liefert zur angegebenen Stellung einen aus der Bibliothek bekannten Zug, oder null    Tabelle: Methoden der Schnittstelle Eroeffnungsbibliothek</description>
+    </item>
+    
+    <item>
+      <title>Ebene 2: Engine</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/06_ebene_2_engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/06_ebene_2_engine/</guid>
+      <description>5.6 Ebene 2: Engine (Whitebox) Die Engine zerfällt wie in der folgenden Abbildung dargestellt in Zugsuche und Stellungsbewertung. Falls vorhanden wird die Ermittlung des Zuges zunächst an die Eröffnungsbibliothek delegiert. Nur wenn diese keinen Rat weiß, kommt die Zugsuche zum Einsatz.
+Bild: Subsystem Engine, Bausteinsicht, Ebene 2
+   Modul Kurzbeschreibung     Zugsuche Ermittelt zu einer Stellung den unter bestimmten Bedingungen optimalen Zug.   Stellungsbewertung Bewertet eine Stellung aus Sicht eines Spielers.</description>
+    </item>
+    
+    <item>
+      <title>Qualitätsziele</title>
+      <link>https://spotifast.github.io/01_einfuehrung/02_qualitaetsziele/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/01_einfuehrung/02_qualitaetsziele/</guid>
+      <description>1.2 Qualitätsziele Die folgende Tabelle beschreibt die zentralen Qualitätsziele von SpotiFast, wobei die Reihenfolge eine grobe Orientierung bezüglich der Wichtigkeit vorgibt.
+   Qualitätsziel Motivation und Erläuterung     Benutzbarkeit Da SpotiFast eine App ist, die gerne und einfach von jedem genutzt werden soll, ist eine gute Verständlichkeit und Bedienbarkeit der App wichtig.   Relativ schnelle Antworten auf Anfragen (Zeitverhalten) SpotiFast braucht nicht zu lange, um Daten darzustellen und zu verarbeiten.</description>
+    </item>
+    
+    <item>
+      <title>Stakeholder</title>
+      <link>https://spotifast.github.io/01_einfuehrung/03_stakeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/01_einfuehrung/03_stakeholder/</guid>
+      <description>1.3 Stakeholder Die folgende Tabelle stellt die Stakeholder von DokChess und ihre jeweilige Intention dar.
+   Wer? Interesse, Bezug     Benutzer und Benutzerinnen  wollen auf anschauliche Weise angezeigt bekommen, ob und wie ihr Musikgeschmack von der gefahrenen Geschwindigkeit abhängt möchten ihre gefahrenen Routen und gehörten Lieder sehen wollen schnelle Reaktionszeiten und wenig Speicherverbrauch   Projektmanager, Auftraggeber  Lernerfolg der Studenten strukturierte und arbeitsteilige Erstellung eines Rechnerprogramms  dem Erstellen eines aus mehreren Komponenten bestehenden, verteilten Systems, welches eine Datenbank beinhaltet, automatische Tests durchführt und Entwurfsmuster umsetzt    Softwareentwickler Erfüllung des Auftrags  Lernerfolg  Benutzung der App       Wer?</description>
+    </item>
+    
+    <item>
+      <title>Zugsuche</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/07_zugsuche/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/07_zugsuche/</guid>
+      <description>5.7 Zugsuche (Blackbox) Zweck/Verantwortlichkeit Das Modul ermittelt zu einer Stellung den unter bestimmten Bedingungen optimalen Zug. Theoretisch gäbe es im Schach einen generell optimalen Zug. Die hohe Anzahl der möglichen Züge und die damit verbundene schier unglaubliche Anzahl zu bewertender Spielsituationen macht es in der Praxis aber unmöglich, ihn zu bestimmen. Gängige Algorithmen wie der Minimax begnügen sich daher damit, den &amp;ldquo;Spielbaum&amp;rdquo; nur bis zu einer bestimmten Tiefe zu explorieren.</description>
+    </item>
+    
+    <item>
+      <title>Stellungsbewertung</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/08_stellungsbewertung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/08_stellungsbewertung/</guid>
+      <description>5.8 Stellungsbewertung (Blackbox) Zweck/Verantwortlichkeit Das Modul bewertet eine Stellung aus Sicht eines Spielers. Ergebnis ist eine Zahl, wobei 0 eine ausgeglichene Situation beschreibt, eine positive Zahl einen Vorteil für den Spieler, eine negative einen Nachteil. Je höher der Betrag, desto größer der Vor- bzw. Nachteil. Das Modul ermöglicht es so, Stellungen miteinander zu vergleichen.
+Schnittstellen Das Modul stellt seine Funktionalität über die Schnittstelle de.dokchess.engine.bewertung.Bewertung bereit, de.dokchess.engine.bewertung.ReineMaterialBewertung ist eine sehr einfache Implementierung.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://spotifast.github.io/08_konzepte/0x_passwoerter_tokens_im_repo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/08_konzepte/0x_passwoerter_tokens_im_repo/</guid>
+      <description>TODO:</description>
+    </item>
+    
+  </channel>
+</rss>

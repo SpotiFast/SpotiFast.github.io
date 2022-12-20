@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lösungstrategie on SpotiFast Dokumentation (SWE2 2022)</title>
+    <link>https://spotifast.github.io/04_loesungsstrategie/</link>
+    <description>Recent content in Lösungstrategie on SpotiFast Dokumentation (SWE2 2022)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    
+	<atom:link href="https://spotifast.github.io/04_loesungsstrategie/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Einstieg</title>
+      <link>https://spotifast.github.io/04_loesungsstrategie/01_einstieg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/04_loesungsstrategie/01_einstieg/</guid>
+      <description>4.1 Einstieg in die Lösungsstrategie Die folgende Tabelle stellt die Qualitätsziele von DokChess (siehe Abschnitt 1.2) passenden Architekturansätzen gegenüber, und erleichtert so einen Einstieg in die Lösung.
+   Qualitätsziel Dem zuträgliche Ansätze in der Architektur     Zugängliches Beispiel (Analysierbarkeit) Architekturüberblick gegliedert nach arc42Explizites, objektorientiertes DomänenmodellModul-, Klassen- und Methodennamen in Deutsch, um englische Schachbegriffe zu vermeidenAusführliche Dokumentation der öffentlichen Schnittstellen in javadoc   Einladende Experimentierplattform (Änderbarkeit) verbreitete Programmiersprache Java, →&amp;nbsp;(a)Schnittstellen für Kernabstraktionen (z.</description>
+    </item>
+    
+    <item>
+      <title>Aufbau</title>
+      <link>https://spotifast.github.io/04_loesungsstrategie/02_aufbau/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/04_loesungsstrategie/02_aufbau/</guid>
+      <description>4.2 Der Aufbau von DokChess DokChess ist als Java-Programm mit main-Routine realisiert. Es zerfällt grob in folgende Teile:
+ eine Implementierung der Schachregeln die eigentliche Engine, welche die Züge ermittelt die Anbindung an eine grafische Benutzeroberfläche über das XBoard-Protokoll einen Adapter für ein konkretes Eröffnungsbibliotheksformat (Polyglot Opening Book)  Diese Zerlegung ermöglicht es, Dinge wie das Kommunikationsprotokoll oder das Eröffnungsbibliotheksformat bei Bedarf auszutauschen. Alle Teile sind durch Schnittstellen abstrahiert, die Implementierungen werden per Dependency Injection zusammengesteckt (→ 5.</description>
+    </item>
+    
+    <item>
+      <title>Spielstrategie</title>
+      <link>https://spotifast.github.io/04_loesungsstrategie/03_spielstrategie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/04_loesungsstrategie/03_spielstrategie/</guid>
+      <description>4.3 Spielstrategie Für die Integration von Eröffnungsbibliotheken wurde das Dateiformat „Polyglot Opening Book“ implementiert (→ Bausteinsicht 5.5 “Eröffnung“), DokChess antwortet dadurch zu Beginn mit „Buchwissen“.
+Für die Spielstrategie im weiteren Partieverlauf ist ein klassischer Minimax­-Algorithmus mit fester Suchtiefe im Spielbaum verantwortlich. Dessen Basis-Implementierung ist nicht nebenläufig, die Bewertung einer Stellung an einem Terminalknoten im Spielbaum basiert ausschließlich auf dem Material (→ Bausteinsicht Ebene 2, 5.6 “Engine“). Diese einfachen Implementierungen erfüllen unter den gegebenen Randbedingungen bereits die Qualitätsszenarien.</description>
+    </item>
+    
+    <item>
+      <title>Anbindung</title>
+      <link>https://spotifast.github.io/04_loesungsstrategie/04_anbindung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/04_loesungsstrategie/04_anbindung/</guid>
+      <description>4.4 Die Anbindung DokChess besitzt keine grafische Benutzeroberfläche; die Kommunikation erfolgt stattdessen über die Standardein­- und -­ausgabe. Als Kommunikationsprotokoll kommt das textbasierte XBoard-­Protokoll zum Einsatz (→ Entscheidung 9.1 „Wie kommuniziert die Engine mit der Außenwelt?“). DokChess lässt sich interaktiv per Kommandozeile bedienen, wenn man die XBoard­-Kommandos kennt und die Engine-Antworten zu deuten weiß (→ Konzept 8.3 „Benutzungsoberfläche“), siehe folgendes Bild.
+Die eigentliche Engine von DokChess wird dabei über einen reaktiven Ansatz („Reactive Extensions“) angebunden (→ 6.</description>
+    </item>
+    
+  </channel>
+</rss>
