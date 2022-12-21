@@ -11,12 +11,12 @@
     
     
     <item>
-      <title>Test</title>
+      <title>Automatisierte Tests</title>
       <link>https://spotifast.github.io/08_konzepte/01_test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://spotifast.github.io/08_konzepte/01_test/</guid>
-      <description>8.1.1 Test am Server Der Server wurde in im Editor Visuaql Studio Code geschrieben. Damit ist es möglich, den Code zu testen und mit der Erweiterung Test grafisch dar zu stellen. Die Test befinden sich im Ordner &amp;lsquo;/scr&amp;rsquo;.
+      <description>8.1.1 Server Tests Der Server wurde in im Editor Visual Studio Code geschrieben. Damit ist es möglich, den Code zu testen und mit der Erweiterung Test grafisch dar zu stellen. Die Test befinden sich im Ordner &amp;lsquo;/scr&amp;rsquo;.
 Test der Datenbank und der JSONValidation Es werden bei der Datenbank getestet, ob das Hinzufügen der Daten wie geplant funktioniert. Hierzu wird eine Mataklasse erstellt, die die Datenbankverbindung herstellt. Diese Klasse wird in den Testklassen verwendet.</description>
     </item>
     
@@ -26,9 +26,9 @@ Test der Datenbank und der JSONValidation Es werden bei der Datenbank getestet, 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://spotifast.github.io/08_konzepte/02_validierung/</guid>
-      <description>8.2 Validierung In diesem Kapitel wird auf die Validierung eingegangen, beispielhaft wird die Validierung des Frames gezeigt.
+      <description>8.2 Validierung In diesem Abschnitt wird auf die Validierung eingegangen, beispielhaft wird die Validierung des Frames gezeigt.
 Der Konstruktor der JSONValidator-Klasse erwartet als Parameter einen String, der den Pfad zur JSON-Schema-Datei enthält. Die den Json als Dictionary, welche überprüft werden soll, sowie das Passwort, welches für die Verschlüsselung verwendet wurde. Außerdem die Version des Frames, die überprüft werden soll.
-Password und Version sind optional Parametrer. Wenn diese nicht angegeben werden, entfällt die Überprüfung des Passworts und der Version.</description>
+Password und Version sind optionale Parametrer. Wenn diese nicht angegeben werden, entfällt die Überprüfung des Passworts und der Version.</description>
     </item>
     
     <item>
@@ -37,8 +37,8 @@ Password und Version sind optional Parametrer. Wenn diese nicht angegeben werden
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://spotifast.github.io/08_konzepte/03_sqlalchemyautoschema/</guid>
-      <description>8.3 SQLAlchemyAutoSchema In diesem Kapitel wird auf das SQLAlchemyAutoSchema eingegangen. Dieses Schema wird verwendet, um die Datenbanktabellen in JSON-Schemas zu übersetzen. Dieses ist nützlich, weil einige Anfragen vom Client kommen um zum Beispiel alle Position einer Route zu bekommen.
-Beispiel anhand /getRoute/{routeId} Es folgt ein Beispiel mit einem Code Snippet, wie das Schema für die Route erstellt wird.
+      <description>8.3 SQLAlchemyAutoSchema In diesem Abschnitt wird auf das SQLAlchemyAutoSchema eingegangen. Dieses Schema wird verwendet, um die Datenbanktabellen in JSON-Schemas zu übersetzen. Dieses ist nützlich, weil einige Anfragen vom Client kommen um zum Beispiel alle Positionen einer Route zu erhalten.
+Beispiel anhand /getRoute/{routeId} Es folgt ein Beispiel mit einem Code Ausschnitt, wie das Schema für die Route erstellt wird.
 class PositionSchemaWithoutRoute(SQLAlchemyAutoSchema): class Meta: model = Position load_instance = True include_relationships = True exclude = (&amp;quot;route&amp;quot;,)  Hierbei werden nun alle Attribute der Position ausgelesen und in das Schema geschrieben.</description>
     </item>
     
@@ -58,27 +58,18 @@ Die Oberfläche ist aus Widgets aufgebaut, die ineinander geschachtelt sind. Ein
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://spotifast.github.io/08_konzepte/06_benutzungsoberfl%C3%A4che/</guid>
-      <description>8.6 Benutzungsoberfläche Für Verbesserungen und Erweiterungen von DokChess durch Dritte sind die vorhandenen Analysemöglichkeiten von Interesse, insbesondere bei Fehlverhalten.
-Die Funktionalität selbst lässt sich gut mit Unit-Tests überprüfen. Das gilt insbesondere für die korrekte Implementierung der Spielregeln, für die Spielweise der Engine (→ 8.7 „Testbarkeit“) und auch für eigene Erweiterungen.
-Innerhalb von DokChess gibt es daher keine feinkörnigen Logging-Ausgaben; Lösungen wie log4j kommen nicht zum Einsatz. Auf diese Weise wird eine Abhängigkeit zu einer Fremdbibliothek, die sich durch den ganzen Quelltext ziehen würde, vermieden und der Code nicht durch diesen Aspekt verschmutzt.</description>
+      <description>8.6 Benutzungsoberfläche Bei der Gestaltung der Benutzungsoberfläche wurde darauf geachtet sie ähnlich wie andere Apps zu gestalten, um die Bedienung zu erleichtern. Dafür wurden apptypische Bedienungselemente verwendet. Wie in der Graphik unten zu erkennen ist, gibt es im unteren Teil der Oberfläche eine Leiste, in welcher zwischen den verschiedenen Seiten gewechselt werden kann, wie man es beispielsweise auch von Apps wie Instagram und ähnlichem kennt. Des Weiteren gibt es oben links in der Ecke einen Button, mit welchem sich eine Liste an Auswählmöglichkeiten öffnet.</description>
     </item>
     
     <item>
-      <title>Tests</title>
-      <link>https://spotifast.github.io/08_konzepte/01_tests/</link>
+      <title>Secrets / Tokens im Repo</title>
+      <link>https://spotifast.github.io/08_konzepte/07_repo_templates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://spotifast.github.io/08_konzepte/01_tests/</guid>
-      <description> 8.1 Tests 8.1.1 Tests Client 8.1.2 Tests Server </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://spotifast.github.io/08_konzepte/0x_passwoerter_tokens_im_repo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://spotifast.github.io/08_konzepte/0x_passwoerter_tokens_im_repo/</guid>
-      <description>TODO:</description>
+      <guid>https://spotifast.github.io/08_konzepte/07_repo_templates/</guid>
+      <description>8.7 Secrets / Tokens im Repo An einigen Stellen im Projekt ist es notwendig, Secrets, Tokens, Passwörter oder andere &amp;ldquo;geheime&amp;rdquo; Informationen im Code zu nutzen.
+Damit diese Informationen einfach im Quellcode eingebunden werden können, ohne dass sie im Repo landen, werden .template Dateien verwendet.
+  secret_password.py.template   secret_password.py     password: str = &#34;INSERT-PASSWORD-HERE&#34;    ist im Repo eingecheckt   password: str = &#34;</description>
     </item>
     
   </channel>

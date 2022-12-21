@@ -16,19 +16,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://spotifast.github.io/06_laufzeitsicht/01_spotify_auth/</guid>
-      <description>6.1 Spotify Autorisierung Die Kommunikation mit Spotify erfolgt durch die Dart-Bibliothek spotify-dart. Diese Bibliothek ist eine Abstraktion der Spotify Web API und erlaubt einen vereinfachten Zugriff auf die API Endpunkte. Auch die Autorisierung via OAuth2 wird zum Teil von der Bibliothek übernommen. Nachfolgend ist der Autorisierungsprozess und der Einsatz der Bibliothek in einem Sequenzdiagramm dargestellt.
-Bild: Autorisierungsprozess und Einsatz der Bibliothek (Teile des eigenen Systems sind grün markiert)
-Für die Verwendung der Spotify Web API ist es notwendig, die Anwendung bei Spotify zu registrieren.</description>
+      <description>6.1 Spotify Autorisierung Wie kriegen wir es hin, von unserer App aus auf die Spotify-Daten des Benutzers zuzugreifen?
+Die Kommunikation mit Spotify erfolgt durch die Dart-Bibliothek spotify-dart. Diese Bibliothek ist eine Abstraktion der Spotify Web API und erlaubt einen vereinfachten Zugriff auf die API Endpunkte. Auch die Autorisierung via OAuth2 wird zum Teil von der Bibliothek übernommen. Nachfolgend ist der Autorisierungsprozess und der Einsatz der Bibliothek in einem Sequenzdiagramm dargestellt.</description>
     </item>
     
     <item>
-      <title>Frames senden</title>
-      <link>https://spotifast.github.io/06_laufzeitsicht/02_frame_senden/</link>
+      <title>Frames hinzufügen</title>
+      <link>https://spotifast.github.io/06_laufzeitsicht/02_frames_hinzufuegen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://spotifast.github.io/06_laufzeitsicht/02_frame_senden/</guid>
-      <description>6.2 Frames senden Eine der wichtigsten Aufgaben des Systems ist die Übertragung der Frames. Die Frames werden dabei zunächst im Client erzeugt und anschließend an den Server gesendet. Dieser Ablauf ist im folgenden Diagramm dargestellt.
-Bild: Erzeugung und Übertragung eines Frames (Teile des eigenen Systems sind grün markiert)
+      <guid>https://spotifast.github.io/06_laufzeitsicht/02_frames_hinzufuegen/</guid>
+      <description>6.2 Frames hinzufügen Eine der wichtigsten Aufgaben des Systems ist die Übertragung der Frames. Die Frames werden dabei zunächst im Client erzeugt und anschließend an den Server gesendet. Dieser Ablauf wird in den folgenden Abschnitten beschrieben.
+Aus sicht des Clients Bild: Erzeugung und Übertragung eines Frames (Teile des eigenen Systems sind grün markiert)
 Nach dem Starten des Trackings wird die User-ID (Benutzername) von Spotify abgefragt. Die UserId wird dann an den Server übermittelt und eine neue Routen-ID wird zurückgegeben.</description>
     </item>
     

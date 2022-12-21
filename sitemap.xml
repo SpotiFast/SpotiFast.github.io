@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://spotifast.github.io/09_entscheidungen/01_anbindung/</loc>
+    <loc>https://spotifast.github.io/08_konzepte/01_test/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://spotifast.github.io/09_entscheidungen/0.x_backendsprache/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://spotifast.github.io/12_glossar/01_grundbegriffe/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -27,19 +39,7 @@
   </url>
   
   <url>
-    <loc>https://spotifast.github.io/08_konzepte/01_test/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://spotifast.github.io/00_ueberblick/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/11_risiken/02_aufwand/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -99,12 +99,6 @@
   </url>
   
   <url>
-    <loc>https://spotifast.github.io/11_risiken/03_spielstaerke/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://spotifast.github.io/04_loesungsstrategie/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -135,6 +129,12 @@
   </url>
   
   <url>
+    <loc>https://spotifast.github.io/08_konzepte/07_repo_templates/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://spotifast.github.io/07_verteilungssicht/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -159,12 +159,6 @@
   </url>
   
   <url>
-    <loc>https://spotifast.github.io/12_glossar/01_einstieg/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://spotifast.github.io/10_qualitaetsanforderungen/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -172,18 +166,6 @@
   
   <url>
     <loc>https://spotifast.github.io/04_loesungsstrategie/02_aufbau/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/05_bausteinsicht/01_ebene_1/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/07_verteilungssicht/01_infrastruktur_windows/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -207,13 +189,19 @@
   </url>
   
   <url>
-    <loc>https://spotifast.github.io/08_konzepte/01_tests/</loc>
+    <loc>https://spotifast.github.io/05_bausteinsicht/01_ueberblick/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://spotifast.github.io/06_laufzeitsicht/02_frame_senden/</loc>
+    <loc>https://spotifast.github.io/05_bausteinsicht/02_view/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://spotifast.github.io/06_laufzeitsicht/02_frames_hinzufuegen/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -225,25 +213,13 @@
   </url>
   
   <url>
-    <loc>https://spotifast.github.io/04_loesungsstrategie/03_spielstrategie/</loc>
+    <loc>https://spotifast.github.io/04_loesungsstrategie/03_spotifastapi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://spotifast.github.io/05_bausteinsicht/02_xboard-protokoll/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/04_loesungsstrategie/04_anbindung/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/05_bausteinsicht/03_aufbau_datenbank/</loc>
+    <loc>https://spotifast.github.io/05_bausteinsicht/03_model/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -255,31 +231,19 @@
   </url>
   
   <url>
-    <loc>https://spotifast.github.io/05_bausteinsicht/04_frame_einf%C3%BCgen_in_datenbank/</loc>
+    <loc>https://spotifast.github.io/05_bausteinsicht/04_aufbau_api/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://spotifast.github.io/05_bausteinsicht/05_aufbau_datenbank/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://spotifast.github.io/01_einfuehrung/01_aufgabenstellung/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/12_glossar/01_begriffe/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/05_bausteinsicht/05_eroeffnung/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/05_bausteinsicht/06_ebene_2_engine/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -292,24 +256,6 @@
   
   <url>
     <loc>https://spotifast.github.io/01_einfuehrung/03_stakeholder/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/05_bausteinsicht/07_zugsuche/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/05_bausteinsicht/08_stellungsbewertung/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://spotifast.github.io/08_konzepte/0x_passwoerter_tokens_im_repo/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

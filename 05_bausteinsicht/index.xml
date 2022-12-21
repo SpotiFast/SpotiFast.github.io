@@ -11,87 +11,58 @@
     
     
     <item>
-      <title>Ebene 1</title>
-      <link>https://spotifast.github.io/05_bausteinsicht/01_ebene_1/</link>
+      <title>Überblick der Architektur</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/01_ueberblick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://spotifast.github.io/05_bausteinsicht/01_ebene_1/</guid>
-      <description>5.1 Ebene 1 DokChess zerfällt wie in Bild unten dargestellt in vier Subsysteme. Die gestrichelten Pfeile stellen fachliche Abhängigkeiten der Subsysteme untereinander dar (&amp;ldquo;x -&amp;gt; y&amp;rdquo; für &amp;ldquo;x ist abhängig von y&amp;rdquo;). Die Kästchen auf der Membran des Systems sind Interaktionspunkte mit Außenstehenden (→ 3.2 Kontextabgrenzung).
-Bild: DokChess, Bausteinsicht, Ebene 1
-   Subsystem Kurzbeschreibung     XBoard-Protokoll Realisiert die Kommunikation mit einem Client mit Hilfe des XBoard-Protokolls.</description>
+      <guid>https://spotifast.github.io/05_bausteinsicht/01_ueberblick/</guid>
+      <description>5.1 Überblick der Architektur Wie bereits aus der Kontextabgrenzung hervorgeht, lässt sich die SpotiFast Architektur in die zwei Bausteine &amp;ldquo;Client&amp;rdquo; und &amp;ldquo;Server&amp;rdquo; aufteilen. Im nachfolgenden Komponentendiagramm ist diese Architektur detaillierter dargestellt.
+Bild: Übersicht der SpotiFast Architektur
+Der Client besteht aus Model und View, wobei das Model die Aufgabe besitzt, mit anderen Komponenten des Systems zu kommunizieren. (→ 4.2.2 „Der Client“). Die Schnittstelle zu Spotify ist über die Developer API von Spotify realisiert und wird vom Model aus aufgerufen.</description>
     </item>
     
     <item>
-      <title>XBoard-Protokoll</title>
-      <link>https://spotifast.github.io/05_bausteinsicht/02_xboard-protokoll/</link>
+      <title>Aufbau View</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/02_view/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://spotifast.github.io/05_bausteinsicht/02_xboard-protokoll/</guid>
-      <description>5.2 XBoard-Protokoll (Blackbox) Zweck/Verantwortlichkeit Dieses Subsystem realisiert die Kommunikation mit einem Client (z.B. einer grafischen Oberfläche) mit Hilfe des textbasierten XBoard-Protokolls (→ Entscheidung 9.1). Das Subsystem liest Befehle über die Standardeingabe ein, prüft sie gegen die Spielregeln und setzt sie für die Engine um. Antworten der Engine (insbesondere ihre Züge) werden vom Subsystem als Ereignisse entgegengenommen, gemäß Protokoll formatiert und über die Standardausgabe zurückgesendet. Das Subsystem treibt somit das ganze Spielgeschehen.</description>
+      <guid>https://spotifast.github.io/05_bausteinsicht/02_view/</guid>
+      <description>5.2 Aufbau View 5.2.1 Appoberfläche Die Appoberfläche ist in verschiedene Seiten unterteilt. Diese werden von der Klasse MyApp abhängig davon aufgerufen, ob der Benutzer eingeloggt ist oder nicht. Wenn er eingeloggt ist, wird über die untere Auswahlleiste, die BottomNavbar, bestimmt, welche Seite sich öffnen soll. Per Default öffnet sich die erste Seite, die MapPage Seite. Der Benutzer kann durch dem Betätigen der BottomNavBar zwischen den verschiedenen Seiten wechseln.
+Klassendiagramm der verschiedenen Seiten der Oberfläche</description>
+    </item>
+    
+    <item>
+      <title>Aufbau Model</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/03_model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/03_model/</guid>
+      <description>5.3 Aufbau Model Der interne Aufbau des Models ist im folgenden Klassendiagramm dargestellt. Das Klassendiagramm ist vereinfacht und dient der Verdeutlichung der Beziehungen zwischen den Klassen.
+Ein detaillierte Beschreibung der Funktionalität ist dem Abschnitt → 6. „Laufzeitsicht“ zu entnehmen.
+Bild: Klassendiagramm des Models
+Neben den &amp;ldquo;aktiven&amp;rdquo; Klassen des Models werden auch die Routen und Frames durch Klassen repräsentiert. Diese dienen vor allem der übersichtlichen Weitergabe von Daten zwischen Methoden.</description>
+    </item>
+    
+    <item>
+      <title>Aufbau API</title>
+      <link>https://spotifast.github.io/05_bausteinsicht/04_aufbau_api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://spotifast.github.io/05_bausteinsicht/04_aufbau_api/</guid>
+      <description>5.4 Aufbau API Im der folgenden Darstellung wird der Aufbau der API Zugriffe beschrieben.
+Bild: API Zugriffe
+Der APIFassade-Klasse werden von der API Funktionen zugewiesen, die aufgerufen werden. In der untenstehenden Tabelle sind alle URLs aufgelistet, die von der API bereitgestellt werden. Die APIFassade befindet sich in src/API/allAPI.py und kann direkt auf die Datenbank zugreifen oder Daten in die Datenbank schreiben. Wenn die Funktion addFrame aufgerufen wird, wird die Hilfsklasse FrameManager verwendet, um zu überprüfen, ob das Json-Schema korrekt ist.</description>
     </item>
     
     <item>
       <title>Aufbau Datenbank</title>
-      <link>https://spotifast.github.io/05_bausteinsicht/03_aufbau_datenbank/</link>
+      <link>https://spotifast.github.io/05_bausteinsicht/05_aufbau_datenbank/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://spotifast.github.io/05_bausteinsicht/03_aufbau_datenbank/</guid>
-      <description>5.3 Aufbau Datenbank Bild: Physisches Schema der Datenbank
+      <guid>https://spotifast.github.io/05_bausteinsicht/05_aufbau_datenbank/</guid>
+      <description>5.5 Aufbau Datenbank Bild: Physisches Schema der Datenbank
 Im Folgenden wird das physische Schema der Datenbank beschrieben. Die Datenbank besteht aus 3 Tabellen, welche in der Abbildung dargestellt sind. Die Tabellen werden im Folgenden beschrieben.
 Tabelle user Die Tabelle user enthält die Daten der Benutzer. Die Daten sind die UserId und das Land des Benutzers. Die UserId ist der Primärschlüssel der Tabelle. Die UserId wird von Spotify vergeben und ist eindeutig.</description>
-    </item>
-    
-    <item>
-      <title>Frame und Einfügen in Datenbank</title>
-      <link>https://spotifast.github.io/05_bausteinsicht/04_frame_einf%C3%BCgen_in_datenbank/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://spotifast.github.io/05_bausteinsicht/04_frame_einf%C3%BCgen_in_datenbank/</guid>
-      <description>5.4.1 Frame Aufgabe Der Client sendet regelmäßig ein Frame an den Server. Dieses Frame enthält die Daten, die der Server speichern soll. Der Frame ist eine Json String mit folgendem Aufbau:
-{ &amp;quot;password&amp;quot; : &amp;quot;xxx&amp;quot;, &amp;quot;version&amp;quot; : &amp;quot;2.0&amp;quot;, &amp;quot;time&amp;quot;: &amp;quot;2022-10-30 18:16:45.784911&amp;quot;, &amp;quot;route&amp;quot;: 1, &amp;quot;geo&amp;quot; : { &amp;quot;lat&amp;quot;: 0.0, &amp;quot;long&amp;quot;: 0.0 }, &amp;quot;trackId&amp;quot;: &amp;quot;753KutoAy00apPsplMRetG&amp;quot; }  Beschreibung der Attribute:
- password - Passwort, das vom Server gesetzt wurde. Dieses Passwort wird vom Client benötigt, um die Daten in die Datenbank zu speichern.</description>
-    </item>
-    
-    <item>
-      <title>Eröffnung</title>
-      <link>https://spotifast.github.io/05_bausteinsicht/05_eroeffnung/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://spotifast.github.io/05_bausteinsicht/05_eroeffnung/</guid>
-      <description>5.5 Eröffnung (Blackbox) Zweck/Verantwortlichkeit Dieses Subsystem stellt Eröffnungsbibliotheken bereit und implementiert das Polyglot Opening Book-Format. Bei diesem Format handelt es sich gegenwärtig um das einzig geläufige, das nicht proprietär ist. Entsprechende Buchdateien und zugehörige Werkzeuge sind im Internet frei verfügbar.
-Schnittstellen Das Subsystem stellt seine Funktionalität über das Java-Interface de.dokchess.eroeffnung.Eroeffnungsbibliothek bereit. Als Implementierung liegt die Klasse de.dokchess.eroeffnung.polyglot.PolyglotOpeningBook vor.
-Bild: Schnittstelle Eroeffnungsbibliothek, Implementierung PolyglotOpeningBook
-   Methode Kurzbeschreibung     liefereZug Liefert zur angegebenen Stellung einen aus der Bibliothek bekannten Zug, oder null    Tabelle: Methoden der Schnittstelle Eroeffnungsbibliothek</description>
-    </item>
-    
-    <item>
-      <title>Ebene 2: Engine</title>
-      <link>https://spotifast.github.io/05_bausteinsicht/06_ebene_2_engine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://spotifast.github.io/05_bausteinsicht/06_ebene_2_engine/</guid>
-      <description>5.6 Ebene 2: Engine (Whitebox) Die Engine zerfällt wie in der folgenden Abbildung dargestellt in Zugsuche und Stellungsbewertung. Falls vorhanden wird die Ermittlung des Zuges zunächst an die Eröffnungsbibliothek delegiert. Nur wenn diese keinen Rat weiß, kommt die Zugsuche zum Einsatz.
-Bild: Subsystem Engine, Bausteinsicht, Ebene 2
-   Modul Kurzbeschreibung     Zugsuche Ermittelt zu einer Stellung den unter bestimmten Bedingungen optimalen Zug.   Stellungsbewertung Bewertet eine Stellung aus Sicht eines Spielers.</description>
-    </item>
-    
-    <item>
-      <title>Zugsuche</title>
-      <link>https://spotifast.github.io/05_bausteinsicht/07_zugsuche/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://spotifast.github.io/05_bausteinsicht/07_zugsuche/</guid>
-      <description>5.7 Zugsuche (Blackbox) Zweck/Verantwortlichkeit Das Modul ermittelt zu einer Stellung den unter bestimmten Bedingungen optimalen Zug. Theoretisch gäbe es im Schach einen generell optimalen Zug. Die hohe Anzahl der möglichen Züge und die damit verbundene schier unglaubliche Anzahl zu bewertender Spielsituationen macht es in der Praxis aber unmöglich, ihn zu bestimmen. Gängige Algorithmen wie der Minimax begnügen sich daher damit, den &amp;ldquo;Spielbaum&amp;rdquo; nur bis zu einer bestimmten Tiefe zu explorieren.</description>
-    </item>
-    
-    <item>
-      <title>Stellungsbewertung</title>
-      <link>https://spotifast.github.io/05_bausteinsicht/08_stellungsbewertung/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://spotifast.github.io/05_bausteinsicht/08_stellungsbewertung/</guid>
-      <description>5.8 Stellungsbewertung (Blackbox) Zweck/Verantwortlichkeit Das Modul bewertet eine Stellung aus Sicht eines Spielers. Ergebnis ist eine Zahl, wobei 0 eine ausgeglichene Situation beschreibt, eine positive Zahl einen Vorteil für den Spieler, eine negative einen Nachteil. Je höher der Betrag, desto größer der Vor- bzw. Nachteil. Das Modul ermöglicht es so, Stellungen miteinander zu vergleichen.
-Schnittstellen Das Modul stellt seine Funktionalität über die Schnittstelle de.dokchess.engine.bewertung.Bewertung bereit, de.dokchess.engine.bewertung.ReineMaterialBewertung ist eine sehr einfache Implementierung.</description>
     </item>
     
   </channel>

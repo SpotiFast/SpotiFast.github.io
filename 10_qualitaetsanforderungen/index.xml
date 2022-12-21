@@ -16,7 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://spotifast.github.io/10_qualitaetsanforderungen/01_qualitaetsbaum/</guid>
-      <description>10.1 Qualitätsbaum Das folgende Bild gibt in Form eines sogenannten Qualitätsbaumes (englisch: Utitlty Tree) einen Überblick über die relevanten Qualitätsmerkmale und ordnet ihnen Szenarien als Beispiele zu. Die Qualitätsziele sind in der Abbildung ebenfalls enthalten und verweisen jeweils auf die Szenerien, welche sie illustrieren.</description>
+      <description>10.1 Qualitätsbaum Das folgende Bild gibt in Form eines sogenannten Qualitätsbaumes (englisch: Utitlty Tree) einen Überblick über die relevanten Qualitätsmerkmale und ordnet ihnen Szenarien als Beispiele zu. Die Qualitätsziele sind in der Abbildung ebenfalls enthalten und verweisen jeweils auf die Szenerien, welche sie illustrieren.
+Bild: Zuordnung von Szenarien zu Qualitätsmerkmalen</description>
     </item>
     
     <item>
@@ -25,8 +26,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://spotifast.github.io/10_qualitaetsanforderungen/02_qualitaetsszenarien/</guid>
-      <description>10.2 Qualitätsszenarien Die Anfangsbuchstaben der Bezeichner (IDs) der Szenarien in der folgenden Tabelle stehen jeweils für das übergeordnete Qualitätsmerkmal, W beispielsweise für Wartbarkeit. Diese Bezeichner finden auch im Qualitätsbaum Verwendung. Nicht immer lassen sich die Szenarien eindeutig einem Merkmal zuordnen. Sie treten daher mitunter mehrmals im Qualitätsbaum auf.
-   ID Szenario     F01 Die abgefahrenen Punkte auf der angezeigten Strecke weichen höchstens um 100 Meter von der tatsächlichen Position ab, außer es bestand eine schlechte Internetverbindung beim Aufzeichnen.</description>
+      <description>10.2 Qualitätsszenarien Die Anfangsbuchstaben der Bezeichner (IDs) der Szenarien in der folgenden Tabelle stehen jeweils für das übergeordnete Qualitätsmerkmal, P beispielsweise für Portierbarkeit. Diese Bezeichner finden auch im Qualitätsbaum Verwendung.
+   ID Szenario erreicht     P01 Eine Benutzer:in kauft sich ein neues iPhone und besaß vorher ein Samsung Smartphone. Die App kann sie auch auf ihrem neuen Handy genau so gut benutzen.    B01 Ein Benutzer:in hat schon vorher Apps verwendet.</description>
     </item>
     
   </channel>

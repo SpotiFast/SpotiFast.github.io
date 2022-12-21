@@ -176,6 +176,10 @@ jQuery(document).ready(function() {
     // clipboard
     var clipInit = false;
     $('code').each(function() {
+        // Disable copy to clipboard button globally
+        return
+
+
         var code = $(this),
             text = code.text();
 

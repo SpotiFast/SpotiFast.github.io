@@ -1,10 +1,10 @@
 SetOutputFilter DEFLATE
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www.dokchess.de$
-RewriteRule ^(.*)$ https://www.dokchess.de/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^spotifast.github.io$
+RewriteRule ^(.*)$ https://spotifast.github.io/$1 [R=301,L]
 
-Redirect 301 /dokchess/arc42 https://www.dokchess.de/
-Redirect 301 /dokchess/arc42/ https://www.dokchess.de/
+Redirect 301 / https://spotifast.github.io/
+Redirect 301 / https://spotifast.github.io/
 
 ErrorDocument 404 /404.html

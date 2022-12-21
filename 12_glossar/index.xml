@@ -11,25 +11,14 @@
     
     
     <item>
-      <title>Einstieg</title>
-      <link>https://spotifast.github.io/12_glossar/01_einstieg/</link>
+      <title>Grundbegriffe</title>
+      <link>https://spotifast.github.io/12_glossar/01_grundbegriffe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://spotifast.github.io/12_glossar/01_einstieg/</guid>
-      <description>&amp;ldquo;Das Schachspiel wird zwischen zwei Gegnern gespielt, die ihre Figuren auf einem quadratischen Spielbrett, &amp;lsquo;Schachbrett&amp;rsquo; genannt, ziehen.&amp;rdquo;
-aus den Schachregeln der FIDE
- Das folgende Glossar erklärt Begriffe aus der Schachwelt, die über den Wortschatz von Wenig- oder Gelegenheitsspielern hinausgehen, sowie Begriffe aus dem Computerschach.
-Details finden Sie in den Schachregeln der FIDE.
-Namen der Schachfiguren Schachbrett-Geometrie  &amp;ldquo;Das Schachbrett besteht aus einem 8 x 8 Gitter von 64 gleich großen Quadraten, die abwechselnd hell und dunkel sind (die &amp;lsquo;weißen&amp;rsquo; und die &amp;lsquo;schwarzen&amp;rsquo; Felder).</description>
-    </item>
-    
-    <item>
-      <title>Begriffe</title>
-      <link>https://spotifast.github.io/12_glossar/01_begriffe/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://spotifast.github.io/12_glossar/01_begriffe/</guid>
-      <description>Begriff Erklärung     50-Züge-Regel Regel im Schach, die besagt, dass ein Spieler ein Remis reklamieren kann, wenn 50 Züge lang kein Bauer bewegt und keine Figur geschlagen wurde.   Alpha-Beta-Suche Deutliche Verbesserung des Minimax-Algorithmus, in dem Teile des Suchbaumes &amp;ldquo;weggeschnitten&amp;rdquo; werden können, ohne dabei zu einem anderen Ergebnis zu kommen.   Einstellen Anfängerfehler im Schach. Eine eigene Figur wird eingestellt, wenn sie auf ein vom Gegner angegriffenes Feld gezogen wird und von diesem gefahrlos geschlagen werden kann.</description>
+      <guid>https://spotifast.github.io/12_glossar/01_grundbegriffe/</guid>
+      <description>12.1 Grundbegriffe VM Eine virtuelle Maschine, auch bekannt als VM, ist eine Art Software, die es ermöglicht, dass andere Betriebssysteme auf einem Computer emuliert werden. Dies wird durch das Ausführen der virtuellen Maschine auf dem Computer erreicht.
+Client Ein Client ist eine Software, die auf einem Endgerät läuft und die Möglichkeit hat, mit einem Server zu kommunizieren. Der Client kann Anfragen an den Server senden und empfangen.
+Server Ein Server ist ein Programm, das auf einem Computer läuft und mit einem Client kommuniziert.</description>
     </item>
     
   </channel>

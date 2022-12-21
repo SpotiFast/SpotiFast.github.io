@@ -11,13 +11,14 @@
     
     
     <item>
-      <title>Frontend-Anbindung</title>
-      <link>https://spotifast.github.io/09_entscheidungen/01_anbindung/</link>
+      <title>Backend-Sprache</title>
+      <link>https://spotifast.github.io/09_entscheidungen/0.x_backendsprache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://spotifast.github.io/09_entscheidungen/01_anbindung/</guid>
-      <description>9.1 Wie kommuniziert die Engine mit der Außenwelt? Zur Fragestellung Als zentrale Anforderung muss DokChess mit vorhandenen Schach-Frontends zusammenarbeiten. Wie erfolgt die Anbindung?
-Es sind eine ganze Reihe grafische Oberflächen speziell zum Spiel gegen Schach-Programme verfügbar. Darüber hinaus gibt es für Schachinteressierte Softwarelösungen mit größerem Leistungsumfang. Neben dem Spiel „Mensch gegen Maschine“ bieten sie weitere Funktionalität, etwa zur Analyse von Partien. Mit der Zeit werden neue Schach-Programme hinzukommen – und andere gegebenenfalls vom Markt verschwinden.</description>
+      <guid>https://spotifast.github.io/09_entscheidungen/0.x_backendsprache/</guid>
+      <description>9.1 Backend-Sprache Zur Fragestellung Welche Sprachen eigenen sich für die Verwendung als Backend-Sprache? Dieses sollte eine Sprache sein, welche die Einbindung eines OR-Mappers ermöglicht.
+Betrachtete Alternativen Python (+) Positiv
+  Python ist eine moderne, universell einsetzbare Programmiersprache, die leicht zu erlernen ist und eine große Community hat.   Python ist eine interpretierte Sprache, die eine hohe Flexibilität bietet.   Die Teammitglieder haben bereits Erfahrung mit Python.   (-) Negativ</description>
     </item>
     
     <item>
