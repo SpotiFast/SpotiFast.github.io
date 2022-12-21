@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="de" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.54.0" />
+    
+<meta name="Description" content="">
+
+
+
+<meta property="og:title" content="Frames hinzufügen">
+<meta property="og:description" content="">
+<meta property="og:url" content="https://spotifast.github.io/06_laufzeitsicht/02_frames_hinzufuegen/">
+<meta property="og:image" content="https://spotifast.github.io/">
+
+
+<meta property="twitter:title" content="Frames hinzufügen">
+<meta property="twitter:description" content="">	
+<meta property="twitter:image" content="https://spotifast.github.io/">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#dc1010">
+<meta name="msapplication-TileColor" content="#dc1010">
+<meta name="theme-color" content="#dc1010">
+
+    <title>Frames hinzufügen :: SpotiFast Dokumentation (SWE2 2022)</title>
+
+    
+    <link href="/css/nucleus.css?1671663108" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1671663108" rel="stylesheet">
+    <link href="/css/hybrid.css?1671663108" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1671663108" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1671663108" rel="stylesheet">
+    <link href="/css/auto-complete.css?1671663108" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1671663108" rel="stylesheet">
+    <link href="/css/theme.css?1671663108" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1671663108" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1671663108" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1671663108"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/06_laufzeitsicht/02_frames_hinzufuegen/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://spotifast.github.io/">
+  <img src="/logo_top_left.png" alt="SpotiFast Logo" title="SpotiFast Logo">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Suchen...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1671663108"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1671663108"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/spotifast.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1671663108"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/00_ueberblick/" title="Was ist SpotiFast?" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/00_ueberblick/">
+          Was ist SpotiFast?
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/01_einfuehrung/" title="Einführung und Ziele" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/01_einfuehrung/">
+          <b>1. </b>Einführung und Ziele
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/01_einfuehrung/01_aufgabenstellung/" title="Aufgabenstellung" class="dd-item ">
+        <a href="/01_einfuehrung/01_aufgabenstellung/">
+        1.1. Aufgabenstellung
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/01_einfuehrung/02_qualitaetsziele/" title="Qualitätsziele" class="dd-item ">
+        <a href="/01_einfuehrung/02_qualitaetsziele/">
+        1.2 Qualitätsziele
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/01_einfuehrung/03_stakeholder/" title="Stakeholder" class="dd-item ">
+        <a href="/01_einfuehrung/03_stakeholder/">
+        1.3 Stakeholder
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/02_randbedingungen/" title="Randbedingungen" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/02_randbedingungen/">
+          <b>2. </b>Randbedingungen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02_randbedingungen/01_technisch/" title="Technisch" class="dd-item ">
+        <a href="/02_randbedingungen/01_technisch/">
+        2.1 Technisch
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02_randbedingungen/02_organisatorisch/" title="Organisatorisch" class="dd-item ">
+        <a href="/02_randbedingungen/02_organisatorisch/">
+        2.2 Organisatorisch
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/02_randbedingungen/03_konventionen/" title="Konventionen" class="dd-item ">
+        <a href="/02_randbedingungen/03_konventionen/">
+        2.3 Konventionen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/03_kontextabgrenzung/" title="Kontextabgrenzung" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/03_kontextabgrenzung/">
+          <b>3. </b>Kontextabgrenzung
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/03_kontextabgrenzung/01_technischer_kontext/" title="Technischer Kontext" class="dd-item ">
+        <a href="/03_kontextabgrenzung/01_technischer_kontext/">
+        3.1 Technischer Kontext
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/04_loesungsstrategie/" title="Lösungstrategie" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/04_loesungsstrategie/">
+          <b>4. </b>Lösungstrategie
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/04_loesungsstrategie/01_einstieg/" title="Einstieg" class="dd-item ">
+        <a href="/04_loesungsstrategie/01_einstieg/">
+        4.1 Einstieg
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/04_loesungsstrategie/02_aufbau/" title="Aufbau" class="dd-item ">
+        <a href="/04_loesungsstrategie/02_aufbau/">
+        4.2 Aufbau
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/04_loesungsstrategie/03_spotifastapi/" title="SpotiFast API" class="dd-item ">
+        <a href="/04_loesungsstrategie/03_spotifastapi/">
+        4.3 SpotiFast API
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/05_bausteinsicht/" title="Bausteinsicht" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/05_bausteinsicht/">
+          <b>5. </b>Bausteinsicht
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/05_bausteinsicht/01_ueberblick/" title="Überblick der Architektur" class="dd-item ">
+        <a href="/05_bausteinsicht/01_ueberblick/">
+        5.1 Überblick der Architektur
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/05_bausteinsicht/02_view/" title="Aufbau View" class="dd-item ">
+        <a href="/05_bausteinsicht/02_view/">
+        5.2 Aufbau View
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/05_bausteinsicht/03_model/" title="Aufbau Model" class="dd-item ">
+        <a href="/05_bausteinsicht/03_model/">
+        5.3 Aufbau Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/05_bausteinsicht/04_aufbau_api/" title="Aufbau API" class="dd-item ">
+        <a href="/05_bausteinsicht/04_aufbau_api/">
+        5.4 Aufbau API
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/05_bausteinsicht/05_aufbau_datenbank/" title="Aufbau Datenbank" class="dd-item ">
+        <a href="/05_bausteinsicht/05_aufbau_datenbank/">
+        5.5 Aufbau Datenbank
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/06_laufzeitsicht/" title="Laufzeitsicht" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/06_laufzeitsicht/">
+          <b>6. </b>Laufzeitsicht
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/06_laufzeitsicht/01_spotify_auth/" title="Spotify Autorisierung" class="dd-item ">
+        <a href="/06_laufzeitsicht/01_spotify_auth/">
+        6.1 Spotify Autorisierung
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/06_laufzeitsicht/02_frames_hinzufuegen/" title="Frames hinzufügen" class="dd-item active">
+        <a href="/06_laufzeitsicht/02_frames_hinzufuegen/">
+        6.2 Frames hinzufügen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/06_laufzeitsicht/03_route_anzeigen/" title="Routen anzeigen" class="dd-item ">
+        <a href="/06_laufzeitsicht/03_route_anzeigen/">
+        6.3 Routen anzeigen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/07_verteilungssicht/" title="Verteilungssicht" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/07_verteilungssicht/">
+          <b>7. </b>Verteilungssicht
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/08_konzepte/" title="Querschnittliche Konzepte" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/08_konzepte/">
+          <b>8. </b>Querschnittliche Konzepte
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/08_konzepte/01_test/" title="Automatisierte Tests" class="dd-item ">
+        <a href="/08_konzepte/01_test/">
+        8.1 Automatisierte Tests
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/08_konzepte/02_validierung/" title="Validierung" class="dd-item ">
+        <a href="/08_konzepte/02_validierung/">
+        8.2 Validierung
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/08_konzepte/03_sqlalchemyautoschema/" title="SQLAlchemyAutoSchema" class="dd-item ">
+        <a href="/08_konzepte/03_sqlalchemyautoschema/">
+        8.3 SQLAlchemyAutoSchema
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/08_konzepte/05_flutter/" title="Flutter" class="dd-item ">
+        <a href="/08_konzepte/05_flutter/">
+        8.5 Flutter
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/08_konzepte/06_benutzungsoberfl%C3%A4che/" title="Benutzungsoberfläche" class="dd-item ">
+        <a href="/08_konzepte/06_benutzungsoberfl%C3%A4che/">
+        8.6 Benutzungsoberfläche
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/08_konzepte/07_repo_templates/" title="Secrets / Tokens im Repo" class="dd-item ">
+        <a href="/08_konzepte/07_repo_templates/">
+        8.7 Secrets / Tokens im Repo
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/09_entscheidungen/" title="Entscheidungen" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/09_entscheidungen/">
+          <b>9. </b>Entscheidungen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/09_entscheidungen/0.x_backendsprache/" title="Backend-Sprache" class="dd-item ">
+        <a href="/09_entscheidungen/0.x_backendsprache/">
+        9.1 Backend-Sprache
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/09_entscheidungen/02_server/" title="Server" class="dd-item ">
+        <a href="/09_entscheidungen/02_server/">
+        9.2 Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/10_qualitaetsanforderungen/" title="Qualitätsanforderungen" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/10_qualitaetsanforderungen/">
+          <b>10. </b>Qualitätsanforderungen
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/10_qualitaetsanforderungen/01_qualitaetsbaum/" title="Qualitätsbaum" class="dd-item ">
+        <a href="/10_qualitaetsanforderungen/01_qualitaetsbaum/">
+        10.1 Qualitätsbaum
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/10_qualitaetsanforderungen/02_qualitaetsszenarien/" title="Qualitätsszenarien" class="dd-item ">
+        <a href="/10_qualitaetsanforderungen/02_qualitaetsszenarien/">
+        10.2 Qualitätsszenarien
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/11_risiken/" title="Risiken" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/11_risiken/">
+          <b>11. </b>Risiken
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/11_risiken/01_sicherheit/" title="Sicherheit" class="dd-item ">
+        <a href="/11_risiken/01_sicherheit/">
+        11.1 SicherheitSicherheit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/12_glossar/" title="Glossar" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/12_glossar/">
+          <b>12. </b>Glossar
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/12_glossar/01_grundbegriffe/" title="Grundbegriffe" class="dd-item ">
+        <a href="/12_glossar/01_grundbegriffe/">
+        12.1 GrundbegriffeGrundbegriffe
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>Mehr</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/mathklk/SpotiFastClient"><i class='fab fa-github'></i> Quelltext Client (GitHub)</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/mathklk/SpotiFastServer"><i class='fab fa-github'></i> Quelltext Server (GitHub)</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://www.phwt.de/impressum/"><i class='fas fa-info-circle'></i> Impressum</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>(c) <a href="https://github.com/mathklk">Mathis K&ouml;lker, Jan Neekamp, Alina Sauermilch</a>, 2022</p>
+<br/>
+<p>(c) arc42-Vorlage: <a href="https://github.com/DokChess/website_de">Stefan Zörner</a>, 2022</p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>SpotiFast Dokumentation (SWE2 2022)</a> > <a href='/06_laufzeitsicht/'>Laufzeitsicht</a> > Frames hinzufügen
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#6-2-frames-hinzufügen">6.2 Frames hinzufügen</a>
+<ul>
+<li><a href="#aus-sicht-des-clients">Aus sicht des Clients</a></li>
+<li><a href="#aus-sicht-des-servers">Aus sicht des Servers</a></li>
+<li><a href="#framevalidation">FrameValidation</a></li>
+<li><a href="#framemanager">FrameManager</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Frames hinzufügen
+            </h1>
+          
+
+        
+
+
+
+
+
+<h2 id="6-2-frames-hinzufügen">6.2 Frames hinzufügen</h2>
+
+<p>Eine der wichtigsten Aufgaben des Systems ist die Übertragung der Frames.
+Die Frames werden dabei zunächst im Client erzeugt und anschließend an den Server gesendet.
+Dieser Ablauf wird in den folgenden Abschnitten beschrieben.</p>
+
+<h3 id="aus-sicht-des-clients">Aus sicht des Clients</h3>
+
+<p><img src="/images/sd_sending_a_frame.png" alt="" />
+<em>Bild: Erzeugung und Übertragung eines Frames (Teile des eigenen Systems sind grün markiert)</em></p>
+
+<p>Nach dem Starten des Trackings wird die User-ID (Benutzername) von Spotify abgefragt.
+Die UserId wird dann an den Server übermittelt und eine neue Routen-ID wird zurückgegeben.
+User- und Routen-ID werden für die aktuelle Route im Client zwischengespeichert.</p>
+
+<p>Danach wird periodisch die Methode <code>sendFrame()</code> aufgerufen.
+Diese fragt zunächst die aktuellen Koordinaten vom GPS-Modul des Geräts ab.
+Danach wird von Spotify das Lied abgefragt, welches aktuell abgespielt wird.
+Zusammen mit weiteren Informationen wird daraus ein Frame erzeugt (<a href="/05_bausteinsicht/04_aufbau_api/#frame-schema">→ 5.4 „Aufbau API“</a>).
+Dieser wird anschließend an den Server gesendet.
+Aus der Antwort des Servers wird entnommen, ob das Hinzufügen erfolgreich war.</p>
+
+<p>Antwortet der Server mit einem Fehlercode - oder gar nicht - wird das Tracking beendet.
+Der Benutzer kann ebenfalls zu jedem Zeitpunkt das Tracking beenden.
+Es wird dann noch der aktuell laufende Sendevorgang abgeschlossen.</p>
+
+<h3 id="aus-sicht-des-servers">Aus sicht des Servers</h3>
+
+<p>Ruft der Client den API-Endpunkt <code>/addFrame</code> auf, ist der Ablauf auf dem Server wie folgt:</p>
+
+<ol>
+<li>Es wird überprüft, ob die Json String valide ist.
+Ist dies nicht der Fall, wird der Frame verworfen.
+Diese Aufgabe übernimmt die Klasse <code>FrameValidation</code></li>
+<li>Das Frame wird zur Datenbank hinzugefügt. Diese Aufgabe übernimmt die Klasse FrameManager.</li>
+</ol>
+
+<h3 id="framevalidation">FrameValidation</h3>
+
+<p>Die Klasse FrameValidation überprüft, ob der Frame valide ist.
+Hierzu wird eine JsonSchema-Datei verwendet. Diese Datei wird in der Klasse JSONValidation geladen und mit dem Frame verglichen. Ist der Frame valide, wird true zurückgegeben. Ist der Frame nicht valide, wird false zurückgegeben. Desweitern wird auch überprüft, ob das Passwort oder die Version korrekt ist. Ist dies nicht der Fall, wird false zurückgegeben und eine Fehlermeldung ausgegeben. Es wird hier im Abschnitt <a href="/08_konzepte/02_validierung/">→ 8.2 „Validierung“</a> näher darauf eingegangen.</p>
+
+<h3 id="framemanager">FrameManager</h3>
+
+<p>Die Klasse <code>FrameManager</code> ist für das Speichern des Frames in der Datenbank zuständig. Hierzu wird die Klasse <code>FrameValidation</code> verwendet. Ist der Frame valide, wird er in die Datenbank gespeichert. Ist der Frame nicht valide, wird er verworfen und die Fehlermeldung wird zurückgegeben.
+Wenn die alles Korrekt ist, wird der Frame geparst. Es Wird eine Position erstellt und zur Datenbank hinzugefügt. Bei dem Hinzufügen kann es zu einem Fehler kommen. Dieser wird abgefangen und eine Fehlermeldung wird zurückgegeben. Wenn keine Fehler aufgetreten sind, wird eine Erfolgsmeldung zurückgegeben.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/06_laufzeitsicht/01_spotify_auth/" title="Spotify Autorisierung"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/06_laufzeitsicht/03_route_anzeigen/" title="Routen anzeigen" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1671663108"></script>
+    <script src="/js/perfect-scrollbar.min.js?1671663108"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1671663108"></script>
+    <script src="/js/jquery.sticky.js?1671663108"></script>
+    <script src="/js/featherlight.min.js?1671663108"></script>
+    <script src="/js/highlight.pack.js?1671663108"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1671663108"></script>
+    <script src="/js/learn.js?1671663108"></script>
+    <script src="/js/hugo-learn.js?1671663108"></script>
+
+    <link href="/mermaid/mermaid.css?1671663108" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1671663108"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
